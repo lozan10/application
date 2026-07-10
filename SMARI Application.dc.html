@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  html,body{margin:0}
+  body{background:#eef0ec;font-family:'Plus Jakarta Sans',system-ui,sans-serif;min-height:100vh}
+  a{color:#17877a}
+  a:hover{color:#0f6a5f}
+</style>
+</helmet>
+<div style="min-height:100vh;display:flex;flex-direction:column;align-items:center;padding:32px 20px 56px;box-sizing:border-box;background:radial-gradient(1200px 500px at 50% -10%, #f4f6f2, #e7eae5)">
+  <div style="width:100%;max-width:920px;display:flex;flex-direction:column;gap:22px">
+    <header style="display:flex;align-items:center;gap:12px;padding:0 2px">
+      <div style="width:40px;height:40px;border-radius:11px;display:grid;place-items:center;font-weight:800;font-size:19px;color:#12332c;background:linear-gradient(135deg,#fbca0d,#89c242)">S</div>
+      <div style="display:flex;flex-direction:column">
+        <span style="font-size:16px;font-weight:800;color:#12332c;letter-spacing:-.01em">SMARI Institute</span>
+        <span style="font-size:12.5px;color:#66716b;font-weight:500">Level 1 course application · 2026 intake</span>
+      </div>
+    </header>
+    <dc-import name="ApplyWizard" variant="guided" hint-size="920px,660px"></dc-import>
+    <p style="text-align:center;font-size:12.5px;color:#8b938d;margin:2px 0 0;line-height:1.6">Need help? WhatsApp <b style="color:#17877a">+256 758 816661</b> · info@smari.ac.ug · Victoria Building, Level 6, Kampala</p>
+  </div>
+</div>
+</x-dc>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics>
+<meta name="design_doc_mode" content="canvas">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  body{margin:0;background:#eceae4;font-family:'Plus Jakarta Sans',system-ui,sans-serif}
+  .dv-turn{padding:44px 48px 40px;border-bottom:1px solid rgba(0,0,0,.08)}
+  .dv-thd{display:flex;align-items:baseline;gap:10px;margin:0 0 6px}
+  .dv-tid{font:700 10px ui-monospace,Menlo,monospace;padding:3px 8px;background:#12332c;color:#fff;border-radius:5px;text-decoration:none}
+  .dv-tname{font:700 14px/1.2 'Plus Jakarta Sans',sans-serif;color:#12332c}
+  .dv-intro{font:400 13px/1.6 'Plus Jakarta Sans',sans-serif;color:rgba(18,51,44,.6);max-width:620px;margin:0 0 26px}
+  .dv-opts{display:flex;flex-wrap:wrap;gap:34px;align-items:flex-start}
+  .dv-opt{flex:none;display:flex;flex-direction:column;gap:11px}
+  .dv-oid{font:700 10.5px ui-monospace,Menlo,monospace;padding:3px 8px;background:rgba(18,51,44,.09);color:#12332c;border-radius:6px;text-decoration:none}
+  .dv-olabel{display:flex;align-items:baseline;gap:9px;font:500 12px/1.4 'Plus Jakarta Sans',sans-serif;color:rgba(18,51,44,.55)}
+  .dv-olabel b{color:#12332c;font-weight:700}
+  .dv-next{margin:26px 0 0;font:13px/1.6 'Plus Jakarta Sans',sans-serif;color:rgba(18,51,44,.5)}
+  .dv-next a{color:#17877a;text-decoration:none;font-weight:600}
+  a{color:#17877a}
+  a:hover{color:#0f6a5f}
+</style>
+</helmet>
+
+<section class="dv-turn" id="t1">
+  <div class="dv-thd"><a class="dv-tid" href="#t1">1</a><span class="dv-tname">SMARI application form — three directions</span></div>
+  <p class="dv-intro">A working 6-step application wizard (course → about you → contact → education → funding & docs → review → confirmation) with live validation and a success state. All three share the SMARI logo palette — deep teal as the trustworthy primary, with coral, gold and green as step/category accents. Click through any of them. They differ in <b>layout &amp; personality</b>, not features.</p>
+  <div class="dv-opts">
+
+    <div class="dv-opt" id="1a">
+      <div class="dv-olabel"><a class="dv-oid" href="#1a">1a</a><b>Institutional</b> · mobile · top stepper, serif headings</div>
+      <div style="width:440px">
+        <dc-import name="ApplyWizard" variant="clean" hint-size="440px,700px"></dc-import>
+      </div>
+    </div>
+
+    <div class="dv-opt" id="1b">
+      <div class="dv-olabel"><a class="dv-oid" href="#1b">1b</a><b>Guided</b> · desktop · brand rail + live course summary</div>
+      <div style="width:800px">
+        <dc-import name="ApplyWizard" variant="guided" hint-size="800px,640px"></dc-import>
+      </div>
+    </div>
+
+    <div class="dv-opt" id="1c">
+      <div class="dv-olabel"><a class="dv-oid" href="#1c">1c</a><b>Focused</b> · mobile · minimal, big type, thin progress bar</div>
+      <div style="width:440px">
+        <dc-import name="ApplyWizard" variant="focused" hint-size="440px,700px"></dc-import>
+      </div>
+    </div>
+
+  </div>
+  <p class="dv-next">Try next: "make <a href="#1b">1b</a> the one, but mobile too" · "combine the rail from <a href="#1b">1b</a> with the big type from <a href="#1c">1c</a>" · "add a save-and-continue-later option" · "new directions"</p>
+</section>
+</x-dc>
+</body>
+</html>

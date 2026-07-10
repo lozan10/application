@@ -1,0 +1,30 @@
+# Dependencies
+node_modules/
+
+# Next.js
+.next/
+out/
+next-env.d.ts
+
+# Environment variables (secrets)
+.env
+.env.*
+!.env.example
+
+# Build artifacts
+build/
+dist/
+
+# Uploaded applicant files (PII — photos, ID documents, certificates)
+smari-portal/public/uploads/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+
+# Claude Code local settings
+.claude/settings.local.json
+
+# Logs
+*.log
+npm-debug.log*

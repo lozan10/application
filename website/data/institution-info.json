@@ -1,0 +1,37 @@
+{
+  "institution": {
+    "name": "SMARI Institute",
+    "fullName": "Sales, Marketing, Media, Advertising and Recruitment Institute",
+    "tagline": "Empowering Africa's Youth Through Innovation",
+    "mission": "To facilitate opportunities for youths regardless of background, to discover and express their abilities and skillsets through purposefully designed courses.",
+    "vision": "Breeding a dynamic, visionary and creative younger generation for a better future for Africa."
+  },
+  "contact": {
+    "phone": ["0200920200", "+256-762-534774"],
+    "whatsapp": "+256 758 816661",
+    "email": "info@smari.ac.ug",
+    "address": "MoTiv, Old Port Bell Road, Kampala, Uganda",
+    "socialMedia": {
+      "facebook": "https://www.facebook.com/smariinstitute/",
+      "twitter": "https://x.com/smari_institute",
+      "instagram": "https://www.instagram.com/smari_institute/"
+    }
+  },
+  "campuses": [
+    {
+      "name": "Kampala Campus",
+      "location": "MoTiv, Old Port Bell Road, Kampala, Uganda",
+      "type": "Main Campus"
+    },
+    {
+      "name": "Jinja Campus",
+      "location": "Jinja, Uganda",
+      "type": "Branch Campus"
+    },
+    {
+      "name": "Mbarara Campus",
+      "location": "Mbarara, Uganda",
+      "type": "Branch Campus"
+    }
+  ]
+}

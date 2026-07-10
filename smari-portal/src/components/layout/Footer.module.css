@@ -1,0 +1,233 @@
+.footer {
+  width: 100%;
+  background: var(--coral);
+  margin-top: auto;
+  padding: 56px 24px 28px;
+}
+
+.wrap {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ——— Taped card ——— */
+.card {
+  position: relative;
+  background: #fff;
+  border-radius: 22px;
+  box-shadow: 0 20px 60px -20px rgba(0, 0, 0, 0.35);
+}
+
+.tape {
+  display: none;
+  position: absolute;
+  top: -14px;
+  width: 84px;
+  height: 30px;
+  background: linear-gradient(165deg, var(--accent), var(--primary));
+  opacity: 0.9;
+  clip-path: polygon(0% 15%, 8% 0%, 92% 0%, 100% 15%, 100% 85%, 92% 100%, 8% 100%, 0% 85%);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.18);
+}
+
+.tapeLeft {
+  left: 36px;
+  transform: rotate(-9deg);
+}
+
+.tapeRight {
+  right: 36px;
+  transform: rotate(9deg);
+}
+
+.cardInner {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 36px 32px;
+}
+
+.brandCol {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  max-width: 400px;
+}
+
+.logo {
+  height: 38px;
+  width: auto;
+}
+
+.tagline {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.7;
+  color: var(--muted);
+}
+
+.linkGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  align-items: flex-start;
+}
+
+.colTitle {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  opacity: 0.7;
+  margin-bottom: 2px;
+}
+
+.link {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--ink);
+  text-decoration: none;
+  opacity: 0.8;
+  transition: opacity 0.15s, color 0.15s;
+}
+
+.link:hover {
+  opacity: 1;
+  color: var(--primary);
+}
+
+.staticLine {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 13.5px;
+  font-weight: 500;
+  color: var(--muted);
+}
+
+/* ——— Bottom bar ——— */
+.bottom {
+  margin-top: 24px;
+  padding: 0 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.bottomLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.copyright {
+  font-size: 12.5px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.55);
+  white-space: nowrap;
+}
+
+.legalLinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.legalLinks a {
+  font-size: 12.5px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.legalLinks a:hover {
+  color: #fff;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.socialIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.75);
+  transition: background 0.15s, color 0.15s, transform 0.15s;
+}
+
+.socialIcon:hover {
+  background: rgba(255, 255, 255, 0.16);
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+@media (min-width: 640px) {
+  .bottom {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .bottomLeft {
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .tape {
+    display: block;
+  }
+
+  .cardInner {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 44px 40px;
+  }
+
+  .linkGrid {
+    gap: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .linkGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 40px 16px 24px;
+  }
+
+  .cardInner {
+    padding: 28px 22px;
+  }
+
+  .linkGrid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}

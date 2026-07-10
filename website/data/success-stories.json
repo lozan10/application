@@ -1,0 +1,63 @@
+{
+  "testimonials": [
+    {
+      "id": 1,
+      "name": "Sarah Nakamya",
+      "course": "Photoshop and Photography - Level 1",
+      "location": "Kampala",
+      "testimonial": "SMARI transformed my passion for photography into professional skills. The hands-on training and industry expert guidance helped me start my own photography business within 3 months of graduation.",
+      "achievement": "Started Photography Business",
+      "image": "/images/testimonials/sarah.jpg"
+    },
+    {
+      "id": 2,
+      "name": "David Okello",
+      "course": "Digital Marketing - Level 1",
+      "location": "Jinja", 
+      "testimonial": "The digital marketing course at SMARI opened doors I never imagined. I learned practical skills that immediately improved my small business and now I help other entrepreneurs with their marketing strategies.",
+      "achievement": "Marketing Consultant",
+      "image": "/images/testimonials/david.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Grace Atim",
+      "course": "Hospitality Management - Level 1",
+      "location": "Mbarara",
+      "testimonial": "SMARI's hospitality course gave me the confidence and skills to excel in the tourism industry. The practical approach and real-world experience prepared me perfectly for my career in hotel management.",
+      "achievement": "Hotel Manager",
+      "image": "/images/testimonials/grace.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Michael Ssempala",
+      "course": "Film and Video Production - Level 1",
+      "location": "Kampala",
+      "testimonial": "From zero knowledge to creating professional videos, SMARI's film production course exceeded my expectations. The industry professionals who taught us shared invaluable insights that fast-tracked my career.",
+      "achievement": "Video Production Company Owner",
+      "image": "/images/testimonials/michael.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Patricia Nalwanga",
+      "course": "Public Speaking",
+      "location": "Jinja",
+      "testimonial": "I was terrified of speaking in public before joining SMARI. Now I confidently lead presentations at work and even conduct training sessions. The transformation has been remarkable.",
+      "achievement": "Corporate Trainer",
+      "image": "/images/testimonials/patricia.jpg"
+    }
+  ],
+  "stats": {
+    "graduatesPlaced": "1,200+",
+    "employmentRate": "85%",
+    "partnerCompanies": "150+",
+    "coursesOffered": "12",
+    "campuses": "3"
+  },
+  "partners": [
+    "Victoria University Kampala",
+    "MoTIV",
+    "Ugandan Media Industry Partners",
+    "Hospitality Industry Leaders",
+    "Marketing Agencies Consortium"
+  ]
+}

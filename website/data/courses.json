@@ -1,0 +1,1892 @@
+{
+  "categories": [
+    {
+      "id": "media",
+      "name": "Media & Creative Arts",
+      "color": "#f04e3e",
+      "description": "Develop your creative skills in digital media, photography, video production, and performing arts with AI integration.",
+      "icon": "Camera"
+    },
+    {
+      "id": "marketing",
+      "name": "Sales & Marketing",
+      "color": "#39bba1",
+      "description": "Master sales techniques and digital marketing strategies to excel in business.",
+      "icon": "TrendingUp"
+    },
+    {
+      "id": "business-management",
+      "name": "Business and Management Studies",
+      "color": "#FF5D00",
+      "description": "Business operations, leadership, and management fundamentals for growing organizations.",
+      "icon": "Briefcase"
+    },
+    {
+      "id": "finance-investment",
+      "name": "Finance and Investment",
+      "color": "#2563EB",
+      "description": "Financial markets, investment principles, and trading fundamentals.",
+      "icon": "DollarSign"
+    },
+    {
+      "id": "hospitality",
+      "name": "Hospitality Management",
+      "color": "#89c242",
+      "description": "Learn hospitality management and events coordination for service industry success.",
+      "icon": "Users"
+    },
+    {
+      "id": "personal",
+      "name": "Personal Development",
+      "color": "#e8e117",
+      "description": "Build confidence, communication skills, and professional competencies including AI literacy.",
+      "icon": "Star"
+    },
+    {
+      "id": "technology",
+      "name": "Technology & AI",
+      "color": "#6366f1",
+      "description": "Learn cutting-edge technology skills including web development, animation, gaming, and AI tools.",
+      "icon": "Laptop"
+    }
+  ],
+  "courses": [
+    {
+      "id": "digital-marketing",
+      "title": "Digital Marketing - Level 1",
+      "category": "marketing",
+      "level": 1,
+      "duration": "3 Months",
+      "cost": "UGX 395,000",
+      "description": "A comprehensive 3-course program for absolute beginners who need to understand the digital marketing landscape, build an online presence, and learn to think strategically. Master digital marketing channels including social media, email marketing, and online advertising to excel in the digital economy.",
+      "image": "https://ik.imagekit.io/67mog36hf/Flowback/Forward%20111/Pi7_Image_Tool/digital-marketing-on-notepad-and-various-office-su-2024-09-15-15-24-25-utc.jpg?updatedAt=1758627854337",
+      "curriculum_modules": [
+        {
+          "name": "Digital Marketing Fundamentals",
+          "description": "Understanding the digital marketing ecosystem, building online presence, and strategic thinking for digital success."
+        },
+        {
+          "name": "Social Media and Content Mastery",
+          "description": "Mastering social media marketing, content creation, audience engagement, and introduction to paid social advertising."
+        },
+        {
+          "name": "Measuring Success and Driving Growth",
+          "description": "Web analytics, reporting, email marketing essentials, and introduction to search advertising (PPC) for data-driven growth."
+        }
+      ],
+      "learning_objectives": [
+        "Understand digital vs traditional marketing and the digital customer journey",
+        "Build effective online presence using websites, SEO, and Google Business Profile",
+        "Create strategic digital marketing plans with clear goals and competitive analysis",
+        "Master social media marketing with content calendars and community management",
+        "Implement content marketing strategies including blog posts and video content",
+        "Set up and manage paid social media advertising campaigns",
+        "Use Google Analytics 4 for tracking website performance and conversions",
+        "Build and segment email lists for effective email marketing campaigns",
+        "Create and manage Google Ads campaigns with proper keyword targeting"
+      ],
+      "skills_covered": [
+        "Digital Marketing Strategy",
+        "Social Media Marketing",
+        "Content Marketing",
+        "Search Engine Optimization (SEO)",
+        "Email Marketing",
+        "Paid Advertising (Google Ads, Meta Ads)",
+        "Web Analytics",
+        "Google Business Profile Management",
+        "Customer Journey Mapping",
+        "Competitive Analysis"
+      ],
+      "outcomes": [
+        "Digital marketing strategy development",
+        "Social media marketing mastery",
+        "Content creation and promotion",
+        "Analytics and performance measurement",
+        "Paid advertising campaign management"
+      ],
+      "career_outcomes": "Transform your digital marketing skills for the modern economy. Excellent for entrepreneurs, small business owners, and those seeking digital marketing careers in Uganda's growing digital landscape.",
+      "prerequisites": "None - Entry level course designed for absolute beginners",
+      "instructor": "Experienced Digital Marketing Professional",
+      "instructor_details": "Experienced instructors with practical knowledge of the Ugandan digital market and proven success in online business growth.",
+      "format": "Practical hands-on training with real-world projects",
+      "certification": "SMARI Certificate of Completion",
+      "campuses": [
+        "Kampala"
+      ],
+      "application_deadlines": {
+        "Kampala": "Rolling admissions - No deadline"
+      },
+      "partnerships": [
+        "Victoria University Kampala"
+      ]
+    },
+    {
+      "id": "audio-production",
+      "title": "Applied Audio Production - Level 1",
+      "category": "media",
+      "level": 1,
+      "duration": "3 Months",
+      "cost": "UGX 395,000",
+      "description": "A comprehensive hands-on course covering the complete audio production workflow from recording to mastering. Learn to use Digital Audio Workstations (DAW), understand signal flow, master microphone techniques, and create professional-quality audio content for music, radio, podcasts, and media.",
+      "image": "https://ik.imagekit.io/67mog36hf/Flowback/Forward%20111/Smari/using-equipment-in-music-studio-2024-10-14-11-31-32-utc.jpg?updatedAt=1758627544141",
+      "curriculum_modules": [
+        {
+          "name": "Fundamentals and Recording Techniques",
+          "description": "Introduction to sound physics, Digital Audio Workstations, signal flow, microphone applications, and professional recording session management."
+        },
+        {
+          "name": "Editing, Mixing, and Studio Techniques",
+          "description": "Advanced audio editing, understanding effects (EQ, compression, reverb), creative mixing techniques, and live sound fundamentals."
+        },
+        {
+          "name": "Mastering, Sound Design, and Career Development",
+          "description": "The mastering process, distribution formats, portfolio building, sound design for media, and networking within the local audio industry."
+        }
+      ],
+      "learning_objectives": [
+        "Understand sound physics, frequency, amplitude, and digital audio concepts",
+        "Master Digital Audio Workstation navigation and workflow management",
+        "Learn professional signal flow from microphone to computer",
+        "Apply different microphone types and polar patterns for various recording situations",
+        "Execute clean vocal, instrument, and field recording techniques",
+        "Perform advanced audio editing including time-stretching and pitch correction",
+        "Use professional effects: EQ, compression, reverb, and delay creatively",
+        "Create balanced, dimensional mixes with proper levels, panning, and processing",
+        "Understand live sound mixing and equipment setup for events",
+        "Master the final polishing process and prepare audio for distribution",
+        "Create professional demo reels and build an online portfolio",
+        "Design soundscapes for film, podcasts, and other media applications"
+      ],
+      "skills_covered": [
+        "Digital Audio Workstation (DAW) Operation",
+        "Microphone Techniques and Applications",
+        "Professional Recording Methods",
+        "Audio Editing and Processing",
+        "Mixing and Signal Processing",
+        "Live Sound Engineering",
+        "Audio Mastering Techniques",
+        "Sound Design for Media",
+        "Audio Distribution and File Management",
+        "Portfolio Development"
+      ],
+      "outcomes": [
+        "Professional audio recording skills",
+        "Mixing and mastering proficiency",
+        "Sound design capabilities",
+        "Industry-ready portfolio",
+        "Live sound engineering knowledge"
+      ],
+      "career_outcomes": "Launch your career in Uganda's growing audio industry. Work as a recording engineer, sound designer, podcast producer, or start your own audio production service with confidence and professional skills.",
+      "prerequisites": "None - Entry level course suitable for beginners",
+      "instructor": "Professional Audio Engineer",
+      "instructor_details": "Industry professionals with extensive experience in recording studios, live sound, and media production, dedicated to providing practical, career-ready skills.",
+      "format": "Practical hands-on training in professional studio environment",
+      "certification": "SMARI Certificate of Completion",
+      "campuses": [
+        "Kampala"
+      ],
+      "application_deadlines": {
+        "Kampala": "Rolling admissions - No deadline"
+      },
+      "partnerships": [
+        "Victoria University Kampala"
+      ]
+    },
+    {
+      "id": "radio-podcast-production",
+      "title": "Radio and Podcast Production - Level 1",
+      "category": "media",
+      "level": 1,
+      "duration": "3 Months",
+      "cost": "UGX 395,000",
+      "description": "A comprehensive course designed to equip students with skills to produce and present compelling audio content for both traditional radio and modern podcasting. Emphasizes hands-on practice covering vocal techniques, digital production, distribution, and AI-powered tools for the audio industry.",
+      "image": "https://ik.imagekit.io/67mog36hf/Flowback/Forward%20111/Smari/podcast-host-enjoying-chat-with-woman-2025-02-18-01-32-10-utc.jpg?updatedAt=1758627557618",
+      "curriculum_modules": [
+        {
+          "name": "Foundation - Voice, Scripting, and Studio Basics",
+          "description": "Master vocal projection and performance, storytelling and scriptwriting, studio equipment operation, and fundamental audio editing techniques."
+        },
+        {
+          "name": "Production - Interviews, Sound Design, and AI Integration",
+          "description": "Professional interview techniques, sound design and mixing, complete podcasting lifecycle, and AI-powered production tools for enhanced workflow."
+        },
+        {
+          "name": "Performance and Professional Practice",
+          "description": "On-air delivery and personal branding, marketing and promotion strategies, final project production, and professional showcase preparation."
+        }
+      ],
+      "learning_objectives": [
+        "Master vocal projection, articulation, pace, and breath control for professional delivery",
+        "Develop compelling narratives and structured scripts for different radio and podcast formats",
+        "Operate studio equipment including microphones, mixing consoles, and digital audio workstations",
+        "Execute professional audio editing including trimming, mixing, and sound effect integration",
+        "Conduct engaging interviews both in-studio and remotely with proper research and preparation",
+        "Create mood and atmosphere using music, sound effects, and ambient audio in productions",
+        "Understand complete podcasting process from format selection to distribution and marketing",
+        "Integrate AI tools for audio enhancement, transcription, and automated production tasks",
+        "Develop on-air delivery skills and personal brand for audience connection",
+        "Build audience and promote content using social media, SEO, and cross-promotion strategies",
+        "Produce high-quality final projects showcasing learned skills across different audio formats"
+      ],
+      "skills_covered": [
+        "Professional Vocal Performance",
+        "Script Writing for Audio",
+        "Studio Equipment Operation",
+        "Audio Editing and Post-Production",
+        "Interview Techniques",
+        "Sound Design and Mixing",
+        "Podcast Production and Distribution",
+        "AI-Powered Audio Tools",
+        "On-Air Presentation",
+        "Audio Content Marketing"
+      ],
+      "outcomes": [
+        "Professional voice and delivery skills",
+        "Complete podcast production capability",
+        "Interview and presentation expertise",
+        "AI-enhanced audio workflow",
+        "Professional audio portfolio"
+      ],
+      "career_outcomes": "Start a successful career in radio and podcast production, transforming creative ideas into engaging audio content. Become a skilled radio host, podcaster, or audio content creator in Uganda's expanding media landscape.",
+      "prerequisites": "None - Entry level course",
+      "instructor": "Experienced Radio and Podcast Professional",
+      "instructor_details": "Experienced audio professionals with extensive radio and podcasting experience, committed to providing practical skills for thriving in the competitive audio media field.",
+      "format": "Practical hands-on studio training",
+      "certification": "SMARI Certificate of Completion",
+      "campuses": [
+        "Kampala"
+      ],
+      "application_deadlines": {
+        "Kampala": "Rolling admissions - No deadline"
+      },
+      "partnerships": [
+        "Victoria University Kampala"
+      ]
+    },
+    {
+      "id": "film-production-ai",
+      "title": "Film Production & AI - Level 1",
+      "category": "media",
+      "level": 1,
+      "duration": "3 Months",
+      "cost": "UGX 395,000",
+      "description": "A comprehensive practical and project-based course guiding students from foundational filmmaking concepts to AI-enhanced final projects. Learn story development, cinematography, directing, and post-production while integrating cutting-edge AI tools for modern film production.",
+      "image": "https://ik.imagekit.io/67mog36hf/Flowback/Forward%20111/Pi7_Image_Tool/behind-the-scenes-from-a-music-video-shoot-2025-02-10-00-20-20-utc.jpg?updatedAt=1758649090852",
+      "curriculum_modules": [
+        {
+          "name": "The Foundation - Story, Pre-Production, and Camera",
+          "description": "Film language and story development, pre-production planning with AI assistance, cinematography and camera operation, and professional sound recording for film."
+        },
+        {
+          "name": "Production - Shooting and Directing",
+          "description": "Professional film set roles and workflow, post-production editing techniques, sound design and color grading, and visual effects with AI integration."
+        },
+        {
+          "name": "The Final Project & Showcase",
+          "description": "AI-assisted production techniques, film finalization and polishing, understanding the film business and distribution, and professional film showcase."
+        }
+      ],
+      "learning_objectives": [
+        "Understand film history, genres, aesthetics, and dramatic structure for short films",
+        "Master pre-production including budgeting, scheduling, casting, and location scouting",
+        "Use AI tools for rapid storyboarding, production schedules, and call sheet management",
+        "Operate professional camera equipment with proper settings, lenses, and stabilization",
+        "Apply lighting fundamentals including three-point lighting and color theory",
+        "Record clean audio using various microphones and sound recording equipment",
+        "Direct actors effectively to achieve powerful and authentic performances",
+        "Understand film crew hierarchy and professional set protocols",
+        "Edit films using industry-standard software with AI-powered features",
+        "Apply sound design, mixing, and color grading for professional cinematic look",
+        "Integrate visual effects and graphics using AI-assisted tools",
+        "Understand film business, distribution strategies, and industry funding"
+      ],
+      "skills_covered": [
+        "Screenwriting and Story Development",
+        "Pre-Production Planning",
+        "Professional Cinematography",
+        "Lighting Techniques",
+        "Sound Recording for Film",
+        "Directing and Actor Management",
+        "Film Editing and Post-Production",
+        "Color Grading and Visual Effects",
+        "AI-Assisted Film Production",
+        "Film Business and Distribution"
+      ],
+      "outcomes": [
+        "Complete film production workflow",
+        "Professional cinematography skills",
+        "AI-integrated post-production",
+        "Director and crew collaboration",
+        "Industry-ready film portfolio"
+      ],
+      "career_outcomes": "Excel in the dynamic field of film and video production. Transform your creative vision into reality and become a skilled filmmaker with modern AI-enhanced production techniques.",
+      "prerequisites": "None - Entry level course",
+      "instructor": "Professional Filmmaker",
+      "instructor_details": "Experienced film industry professionals with expertise in both traditional filmmaking and modern AI-assisted production techniques.",
+      "format": "Practical hands-on production training",
+      "certification": "SMARI Certificate of Completion",
+      "campuses": [
+        "Kampala"
+      ],
+      "application_deadlines": {
+        "Kampala": "Rolling admissions - No deadline"
+      },
+      "partnerships": [
+        "Victoria University Kampala"
+      ]
+    },
+    {
+      "id": "documentary-production-ai",
+      "title": "Documentary Production & AI - Level 1",
+      "category": "media",
+      "level": 1,
+      "duration": "3 Months",
+      "cost": "UGX 395,000",
+      "description": "A project-based course guiding students from foundational journalistic concepts to AI-enhanced documentary production. Focus on ethical, compelling, and efficient storytelling while mastering investigative research, interview techniques, and modern post-production.",
+      "image": "https://ik.imagekit.io/67mog36hf/Flowback/Forward%20111/Smari/young-african-man-using-vintage-old-video-camera-o-2025-02-22-10-34-26-utc.jpg?updatedAt=1758627563422",
+      "curriculum_modules": [
+        {
+          "name": "The Foundation - Story, Research, and Ethics",
+          "description": "Understanding documentary styles and narrative development, investigative journalism and fact-checking, visual planning and pre-production, and professional camera and audio for documentary work."
+        },
+        {
+          "name": "Production - Shooting, Directing, and AI-Enhanced Workflow",
+          "description": "Advanced interviewing and directing techniques, AI-assisted editing and narrative structure, sound design and color grading, and archival footage integration with visual effects."
+        },
+        {
+          "name": "The Final Project, AI Ethics, and Distribution",
+          "description": "AI ethics in documentary creation, final project refinement and feedback, documentary business and distribution strategies, and professional documentary showcase."
+        }
+      ],
+      "learning_objectives": [
+        "Define different documentary styles and develop unique narrative voice",
+        "Use AI tools for brainstorming concepts, exploring story angles, and refining proposals",
+        "Master investigative journalism techniques for in-depth research and reliable sourcing",
+        "Understand ethical considerations specific to documentary production including representation and consent",
+        "Utilize AI for automated interview transcription, keyword analysis, and information cross-referencing",
+        "Create visual plans, shot lists, and storyboards using AI-assisted visualization",
+        "Conduct compelling interviews and guide authentic soundbites from subjects",
+        "Direct observational scenes without interfering while revealing the story",
+        "Edit documentaries using AI for rapid text-based editing and identifying key interview moments",
+        "Apply audio design, color grading, and AI-enhanced post-production techniques",
+        "Source, license, and integrate archival materials effectively",
+        "Understand funding sources, film festivals, and distribution strategies for independent documentaries"
+      ],
+      "skills_covered": [
+        "Documentary Storytelling",
+        "Investigative Research Methods",
+        "Ethical Documentary Practices",
+        "Professional Interview Techniques",
+        "Observational Filming",
+        "AI-Assisted Post-Production",
+        "Archival Footage Integration",
+        "Documentary Business and Distribution",
+        "Fact-Checking and Verification",
+        "Visual and Audio Storytelling"
+      ],
+      "outcomes": [
+        "Ethical documentary production skills",
+        "Professional research and interview techniques",
+        "AI-enhanced editing workflow",
+        "Archival integration expertise",
+        "Distribution-ready documentary portfolio"
+      ],
+      "career_outcomes": "Become a skilled documentary filmmaker with modern AI-enhanced production techniques. Create compelling non-fiction content for television, streaming platforms, and social impact campaigns.",
+      "prerequisites": "None - Entry level course",
+      "instructor": "Professional Documentary Filmmaker",
+      "instructor_details": "Experienced documentary professionals with expertise in investigative storytelling, ethical production practices, and modern AI-assisted workflows.",
+      "format": "Practical project-based training",
+      "certification": "SMARI Certificate of Completion",
+      "campuses": [
+        "Kampala"
+      ],
+      "application_deadlines": {
+        "Kampala": "Rolling admissions - No deadline"
+      },
+      "partnerships": [
+        "Victoria University Kampala"
+      ]
+    },
+    {
+      "id": "photography-photoshop-ai",
+      "title": "Photoshop and Photography with AI - Level 1",
+      "category": "media",
+      "level": 1,
+      "duration": "3 Months",
+      "cost": "UGX 395,000",
+      "description": "A comprehensive course combining foundational photography principles with expert-level Photoshop skills, supercharged by the latest AI technologies. Learn to capture stunning images and leverage AI to enhance creative vision and efficiency for both beginners and experienced photographers.",
+      "image": "https://res.cloudinary.com/dycczmklj/image/upload/v1770382257/Adobe-Photoshop_enllgs.jpg",
+      "curriculum_modules": [
+        {
+          "name": "The Foundation - Camera, Composition, and AI-Powered Capture",
+          "description": "Master exposure triangle and composition principles, AI-enhanced fieldwork planning and location scouting, RAW image management with AI culling tools, and Adobe Lightroom with AI masking and enhancement."
+        },
+        {
+          "name": "The Photoshop Advantage - Composites, Retouching, and Generative AI",
+          "description": "Photoshop fundamentals with AI-powered selections, Generative Fill and Expand for composites, AI-powered retouching and skin enhancement, and advanced AI manipulation with creative effects."
+        },
+        {
+          "name": "The Portfolio - Showcase, Ethics, and The Future",
+          "description": "Studio lighting and artificial light techniques, business of photography with ethical AI considerations, final project and showcase preparation, and professional portfolio exhibition."
+        }
+      ],
+      "learning_objectives": [
+        "Master the exposure triangle (aperture, shutter speed, ISO) for manual camera control",
+        "Apply composition principles including rule of thirds, leading lines, and natural light work",
+        "Use AI-powered camera features and modes for enhanced capture quality",
+        "Generate mood boards, scout locations, and create shot lists using AI planning tools",
+        "Understand RAW vs JPEG formats and implement AI-powered culling for efficient workflow",
+        "Master Adobe Lightroom including AI masking, noise reduction, and lens blur features",
+        "Navigate Photoshop workspace with advanced selections, layer masks, and AI selection tools",
+        "Use Generative Fill and Expand for seamless object removal, addition, and image extension",
+        "Create realistic composites combining multiple images with AI-assisted blending",
+        "Apply AI-powered retouching for portraits including automated skin smoothing and enhancement",
+        "Use Neural Filters for creative effects, colorization, and landscape manipulation",
+        "Understand studio lighting setup with strobes, continuous lights, and light modifiers"
+      ],
+      "skills_covered": [
+        "Manual Camera Operation",
+        "Photographic Composition",
+        "AI-Enhanced Photography Planning",
+        "RAW Processing and Workflow",
+        "Adobe Lightroom Mastery",
+        "Advanced Photoshop Techniques",
+        "AI-Powered Image Editing",
+        "Professional Retouching",
+        "Composite Image Creation",
+        "Studio Lighting Techniques"
+      ],
+      "outcomes": [
+        "Professional photography skills",
+        "AI-enhanced editing workflow",
+        "Advanced Photoshop proficiency",
+        "Studio lighting expertise",
+        "Professional photography portfolio"
+      ],
+      "career_outcomes": "Future-proof your photography skills with AI integration. Work as a professional photographer, photo editor, or digital artist with cutting-edge techniques for modern visual content creation.",
+      "prerequisites": "None - Suitable for both beginners and experienced photographers",
+      "instructor": "Professional Photographer and Digital Artist",
+      "instructor_details": "Experienced photographers with expertise in both traditional photography and modern AI-enhanced digital workflows, dedicated to providing cutting-edge industry skills.",
+      "format": "Practical hands-on training with real-world projects",
+      "certification": "SMARI Certificate of Completion",
+      "campuses": [
+        "Kampala"
+      ],
+      "application_deadlines": {
+        "Kampala": "Rolling admissions - No deadline"
+      },
+      "partnerships": [
+        "Victoria University Kampala"
+      ]
+    },
+    {
+      "id": "motion-graphics-ai",
+      "title": "Motion & Still Graphics with AI - Level 1",
+      "category": "media",
+      "level": 1,
+      "duration": "3 Months",
+      "cost": "UGX 395,000",
+      "description": "A comprehensive course designed to equip students with both fundamental and cutting-edge skills in motion and still graphics production. The curriculum integrates traditional design principles with AI-powered tools, enabling students to create professional, impactful visuals for modern media.",
+      "image": "https://res.cloudinary.com/dycczmklj/image/upload/v1770384560/hq720_i7eh6c.jpg",
+      "curriculum_modules": [
+        {
+          "name": "The Foundation - Still Graphics and Visual Concepts",
+          "description": "Visual storytelling and core design principles, Adobe Photoshop mastery with AI manipulation tools, Adobe Illustrator for vector graphics with AI illustration assistance, and professional creative workflow optimization."
+        },
+        {
+          "name": "The Action - Motion Graphics and Animation",
+          "description": "Introduction to motion graphics and Adobe After Effects, advanced animation techniques with AI-assisted effects, motion graphics for different platforms and social media, and audio integration for complete packages."
+        },
+        {
+          "name": "Capstone Project & AI-Powered Portfolio",
+          "description": "Project conception with advanced AI integration, intensive project production with AI workflow optimization, portfolio building and professional client pitch preparation, and final project showcase."
+        }
+      ],
+      "learning_objectives": [
+        "Understand visual storytelling principles including typography, color theory, and composition",
+        "Master Adobe Photoshop for image editing, photo manipulation, and digital painting",
+        "Use AI image generators (Midjourney, Leonardo AI) for rapid prototyping and asset creation",
+        "Apply Generative Fill and Generative Expand for seamless image manipulation",
+        "Master Adobe Illustrator for logos, icons, illustrations, and scalable graphics",
+        "Use AI to assist with vector design, pattern creation, and raster-to-vector conversion",
+        "Understand principles of animation including keyframing, motion paths, and easing",
+        "Master Adobe After Effects for professional motion graphics production",
+        "Use AI-assisted tools like Runway ML for motion from still images and video loops",
+        "Create kinetic typography and advanced keyframe animations",
+        "Design motion graphics optimized for different platforms (Instagram, TikTok, web, digital ads)",
+        "Integrate 2D and 3D elements with camera movements in After Effects environment"
+      ],
+      "skills_covered": [
+        "Visual Design Principles",
+        "Adobe Photoshop with AI Features",
+        "Adobe Illustrator Vector Design",
+        "AI-Generated Visual Assets",
+        "Motion Graphics Animation",
+        "Adobe After Effects Mastery",
+        "Kinetic Typography",
+        "Multi-Platform Design Optimization",
+        "Audio and Visual Integration",
+        "Professional Portfolio Development"
+      ],
+      "outcomes": [
+        "Professional still and motion graphics skills",
+        "AI-enhanced design workflow",
+        "Multi-platform content creation",
+        "Advanced animation techniques",
+        "Industry-ready design portfolio"
+      ],
+      "career_outcomes": "Excel in the modern graphics industry with both traditional and AI-enhanced skills. Work as a motion graphics designer, visual effects artist, or multimedia designer for advertising, social media, and entertainment industries.",
+      "prerequisites": "None - Entry level course",
+      "instructor": "Professional Motion Graphics Designer",
+      "instructor_details": "Experienced motion graphics professionals with expertise in both traditional design principles and cutting-edge AI-assisted workflows for modern media production.",
+      "format": "Practical hands-on training with real-world projects",
+      "certification": "SMARI Certificate of Completion",
+      "campuses": [
+        "Kampala"
+      ],
+      "application_deadlines": {
+        "Kampala": "Rolling admissions - No deadline"
+      },
+      "partnerships": [
+        "Victoria University Kampala"
+      ]
+    },
+    {
+      "id": "web-app-development-ai",
+      "title": "Website Design, App Development & AI - Level 1",
+      "category": "technology",
+      "level": 1,
+      "duration": "3 Months",
+      "cost": "UGX 395,000",
+      "description": "A rapid, hands-on, cutting-edge education in creating digital products. The curriculum integrates AI as a fundamental tool throughout the design and development lifecycle, mirroring its central role in the modern tech industry. Perfect for aspiring digital product creators.",
+      "image": "https://ik.imagekit.io/67mog36hf/Flowback/Forward%20111/Pi7_Image_Tool/programming-engineers-analyzing-html-code-2025-02-19-05-28-48-utc.jpg?updatedAt=1758636303242",
+      "curriculum_modules": [
+        {
+          "name": "Foundation - Design, UX, and AI for Prototyping",
+          "description": "UX/UI principles with AI design tools, visual design and branding with AI image generation, Figma mastery with AI plugins, and HTML/CSS fundamentals with AI-assisted development."
+        },
+        {
+          "name": "App Development - From Native to Cross-Platform",
+          "description": "Mobile ecosystems and React Native fundamentals, app state management with AI-assisted debugging, building app features with AI integration, and no-code backend setup with database integration."
+        },
+        {
+          "name": "Capstone Project & AI-Powered Deployment",
+          "description": "Advanced project planning with AI market research, intensive development with sophisticated AI tools, SEO and marketing optimization with AI assistance, and professional project showcase with portfolio building."
+        }
+      ],
+      "learning_objectives": [
+        "Understand digital product lifecycle from ideation to launch",
+        "Master UX research, UI principles, and wireframing with AI design tools",
+        "Use AI image generators (Midjourney, DALL-E) for visual assets and mood boards",
+        "Master Figma for collaborative design, interactive prototypes, and component libraries",
+        "Apply AI plugins for content generation, user flow analysis, and task automation",
+        "Learn responsive design for seamless adaptation across screen sizes",
+        "Master HTML5 semantics and CSS3 styling including Flexbox and Grid layouts",
+        "Use AI code assistants (GitHub Copilot) for code generation, debugging, and development acceleration",
+        "Understand mobile development differences between iOS, Android, and cross-platform approaches",
+        "Learn React Native for cross-platform app development with single codebase",
+        "Master state management, API integration, and data handling in mobile apps",
+        "Implement core app features: authentication, notifications, and location services"
+      ],
+      "skills_covered": [
+        "User Experience (UX) Design",
+        "User Interface (UI) Design",
+        "AI-Assisted Design Tools",
+        "Responsive Web Design",
+        "HTML5 and CSS3",
+        "JavaScript and React Native",
+        "Mobile App Development",
+        "Database Integration",
+        "AI-Powered Development Tools",
+        "SEO and Digital Marketing"
+      ],
+      "outcomes": [
+        "Complete web and app development skills",
+        "AI-integrated development workflow",
+        "Cross-platform mobile development",
+        "Professional digital products",
+        "Industry-ready development portfolio"
+      ],
+      "career_outcomes": "Launch your career in the growing tech industry with modern AI-enhanced development skills. Work as a web developer, mobile app developer, or start your own digital product company.",
+      "prerequisites": "None - Entry level course suitable for beginners",
+      "instructor": "Professional Software Developer",
+      "instructor_details": "Experienced software developers with expertise in both traditional development practices and modern AI-assisted development workflows.",
+      "format": "Practical hands-on coding and project development",
+      "certification": "SMARI Certificate of Completion",
+      "campuses": [
+        "Kampala"
+      ],
+      "application_deadlines": {
+        "Kampala": "Rolling admissions - No deadline"
+      },
+      "partnerships": [
+        "Victoria University Kampala"
+      ]
+    },
+    {
+      "id": "animation-gaming-ai",
+      "title": "Animation & Gaming with AI - Level 1",
+      "category": "technology",
+      "level": 1,
+      "duration": "9 Months",
+      "cost": "UGX 395,000",
+      "description": "A specialized and intensive 9-month, three-semester program designed for students who want to master both animation and game development. The curriculum is heavily project-based, guiding students from foundational concepts to advanced AI integration, culminating in professional portfolio and game demo.",
+      "image": "https://ik.imagekit.io/67mog36hf/Flowback/Forward%20111/Smari/game-developing-creative-company-employee-working-2025-02-18-17-53-30-utc.jpg?updatedAt=1758627537642",
+      "curriculum_modules": [
+        {
+          "name": "Semester 1: The Foundation - Art, Animation, and Game Design",
+          "description": "12 principles of animation with AI concept art generation, 3D modeling and texturing with AI assistance, and game design principles with AI-powered level design."
+        },
+        {
+          "name": "Semester 2: Development - Engines, Programming, and AI",
+          "description": "Unity and Unreal Engine fundamentals with AI asset integration, game programming with AI code assistants, and character rigging with AI-assisted animation."
+        },
+        {
+          "name": "Semester 3: Commercialization - Advanced Skills & The Future",
+          "description": "Advanced animation and VFX with AI procedural techniques, final capstone project with AI-powered optimization, and career launch with industry standards and marketing."
+        }
+      ],
+      "learning_objectives": [
+        "Master the 12 principles of animation for both 2D and 3D applications",
+        "Learn 2D animation using Adobe Animate and Blender's Grease Pencil",
+        "Use AI tools for generating concept art, color palettes, and character explorations",
+        "Master 3D modeling in Blender or Maya for character and asset creation",
+        "Apply UV unwrapping, texturing techniques, and procedural material creation",
+        "Use AI for texture generation and automated 3D model creation from text or images",
+        "Understand game design principles, player psychology, and compelling gameplay loops",
+        "Learn level design and environment creation from concept to game engine implementation",
+        "Use AI for level layout generation and AI-controlled agent testing",
+        "Master Unity and Unreal Engine with AI asset integration workflows",
+        "Learn game programming basics including C# scripting, input handling, and game logic",
+        "Create intelligent NPCs using behavior trees, state machines, and AI assistants"
+      ],
+      "skills_covered": [
+        "2D and 3D Animation Principles",
+        "Character and Environment Modeling",
+        "Game Engine Development (Unity/Unreal)",
+        "Game Programming and Scripting",
+        "AI-Assisted Asset Creation",
+        "Character Rigging and Animation",
+        "Visual Effects and Particle Systems",
+        "Game AI and NPC Behavior",
+        "Level Design and Environment Art",
+        "Portfolio and Demo Development"
+      ],
+      "outcomes": [
+        "Professional animation and game development skills",
+        "AI-integrated production pipeline",
+        "Complete game demo project",
+        "Industry-ready portfolio",
+        "Advanced technical and artistic expertise"
+      ],
+      "career_outcomes": "Launch your career in Uganda's emerging animation and gaming industry. Work as an animator, game developer, technical artist, or start your own game studio with comprehensive skills in both traditional and AI-assisted production.",
+      "prerequisites": "None - Entry level course, but requires dedication for 9-month intensive program",
+      "instructor": "Professional Game Developer and Animator",
+      "instructor_details": "Industry professionals with extensive experience in animation studios, game development companies, and expertise in both traditional techniques and modern AI-assisted workflows.",
+      "format": "Intensive project-based training with portfolio development",
+      "certification": "SMARI Certificate of Completion",
+      "campuses": [
+        "Kampala"
+      ],
+      "application_deadlines": {
+        "Kampala": "Rolling admissions - No deadline"
+      },
+      "partnerships": [
+        "Victoria University Kampala"
+      ]
+    },
+    {
+      "id": "music-video-production-ai",
+      "title": "Music Video Production with AI - Level 1",
+      "category": "media",
+      "level": 1,
+      "duration": "3 Months",
+      "cost": "UGX 395,000",
+      "description": "A comprehensive course covering the complete music video production workflow from concept to distribution. Learn to create compelling visual narratives that complement music while integrating cutting-edge AI tools for enhanced creative possibilities and efficient production.",
+      "image": "https://res.cloudinary.com/dycczmklj/image/upload/v1770384704/DALL_E_2024-10-05_11.18.24_-_A_landscape_image_of_a_person_using_an_AI_music_video_generator_on_a_computer._The_screen_shows_various_video_clips_being_processed_by_the_AI_and_mus_pi1qmb.jpg",
+      "curriculum_modules": [
+        {
+          "name": "Pre-Production & The Creative Vision",
+          "description": "Music video concepts and storytelling with AI ideation, storyboarding with AI visual planning tools, production team coordination and budgeting, and cinematography with AI-driven enhancement tools."
+        },
+        {
+          "name": "Production & Post-Production",
+          "description": "Professional shooting and on-set directing practices, AI-powered editing and music synchronization, visual effects and motion graphics with AI generators, and audio mixing with AI enhancement tools."
+        },
+        {
+          "name": "Commercialization & The Future",
+          "description": "Color grading with AI intelligent correction, promotion and social media with AI content creation, portfolio building and business skills development, and professional music video showcase."
+        }
+      ],
+      "learning_objectives": [
+        "Understand the relationship between music and visuals for effective storytelling",
+        "Analyze song lyrics, mood, and genre to develop creative music video concepts",
+        "Use AI tools (ChatGPT, Jasper AI) for concept generation, script refinement, and thematic exploration",
+        "Create detailed storyboards using AI storyboard generators (Shai Creative, Katalist.ai)",
+        "Understand key crew roles, budget creation, and resource allocation for music video production",
+        "Master cinematography techniques specifically for music video aesthetics",
+        "Use AI-driven cameras and tools for auto-framing and real-time visual enhancements",
+        "Direct music video shoots with talent, dancers, and performance elements",
+        "Edit music videos with perfect sync using AI-powered editing and transition tools",
+        "Apply visual effects and motion graphics using AI video generators (Pika Labs, Runway ML)",
+        "Use AI for intelligent color correction and grading to achieve specific visual moods",
+        "Create promotional content, teasers, and social media assets using AI generation tools"
+      ],
+      "skills_covered": [
+        "Music Video Concept Development",
+        "AI-Assisted Creative Planning",
+        "Professional Video Production",
+        "Music Video Directing",
+        "AI-Enhanced Post-Production",
+        "Visual Effects and Motion Graphics",
+        "Color Grading and Finishing",
+        "Music Industry Business Skills",
+        "Digital Marketing for Artists",
+        "Professional Portfolio Development"
+      ],
+      "outcomes": [
+        "Complete music video production skills",
+        "AI-integrated creative workflow",
+        "Professional directing and editing",
+        "Visual effects and motion graphics",
+        "Music industry business knowledge"
+      ],
+      "career_outcomes": "Excel in the music and entertainment industry as a music video director, editor, or multimedia artist. Work with musicians, record labels, and entertainment companies to create compelling visual content.",
+      "prerequisites": "None - Entry level course",
+      "instructor": "Professional Music Video Director",
+      "instructor_details": "Experienced music video and entertainment industry professionals with expertise in both traditional production and modern AI-enhanced creative workflows.",
+      "format": "Practical hands-on production training",
+      "certification": "SMARI Certificate of Completion",
+      "campuses": [
+        "Kampala"
+      ],
+      "application_deadlines": {
+        "Kampala": "Rolling admissions - No deadline"
+      },
+      "partnerships": [
+        "Victoria University Kampala"
+      ]
+    },
+    {
+      "id": "beauty-makeup",
+      "title": "Beauty Makeup for Film with AI - Level 1",
+      "category": "media",
+      "level": 1,
+      "duration": "3 Months",
+      "cost": "UGX 395,000",
+      "description": "A comprehensive course combining foundational makeup artistry with specialized demands of film and high-definition cameras. Students master traditional techniques and learn to leverage AI tools for creative inspiration, character visualization, and advanced digital enhancements.",
+      "image": "https://ik.imagekit.io/67mog36hf/Flowback/Forward%20111/Smari/scary-african-shaman-with-a-petrified-cracked-skin-2025-01-26-11-11-42-utc.jpg?updatedAt=1758627563747",
+      "curriculum_modules": [
+        {
+          "name": "The Foundation - HD & Natural Makeup",
+          "description": "HD makeup and digital skin preparation, character-informed natural looks, advanced eyes and lips techniques, and on-set practice under various lighting conditions."
+        },
+        {
+          "name": "The Artistry - Character & Special Effects",
+          "description": "Character makeup and aging techniques, basic special effects and casualty simulation, period makeup for historical accuracy, and continuity with digital effects integration."
+        },
+        {
+          "name": "The Professional - Portfolio & Showcase",
+          "description": "Professional portfolio building, final project planning with AI vision, practical project execution, and showcase with graduation ceremony."
+        }
+      ],
+      "learning_objectives": [
+        "Master HD makeup techniques for flawless, 'second-skin' finish for high-definition cameras",
+        "Understand color theory, skin analysis, and advanced foundation selection for different lighting",
+        "Use AI tools to analyze skin tones and suggest compatible products for various conditions",
+        "Create naturalistic 'no-makeup' looks and subtle character enhancements",
+        "Apply male grooming techniques and manage facial hair for camera",
+        "Use AI to generate virtual makeup concepts for character testing without physical application",
+        "Master corrective eye makeup, brow grooming, and products designed for set longevity",
+        "Adapt makeup for different lighting setups and collaborate effectively with cinematographers",
+        "Understand script breakdown, character analysis, and facial mapping for transformations",
+        "Use AI to visualize character appearances at different life stages and create reference materials",
+        "Create realistic age lines, cuts, bruises, burns, and wounds using professional materials",
+        "Apply historically accurate makeup looks with proper research and period-specific techniques"
+      ],
+      "skills_covered": [
+        "HD Film Makeup Techniques",
+        "Character Development and Analysis",
+        "AI-Assisted Design and Visualization",
+        "Special Effects Makeup",
+        "Period and Historical Makeup",
+        "On-Set Continuity Management",
+        "Professional Color Theory",
+        "Lighting Adaptation Techniques",
+        "Portfolio Photography",
+        "Industry Business Practices"
+      ],
+      "outcomes": [
+        "Professional film makeup artistry",
+        "Character transformation skills",
+        "AI-enhanced creative workflow",
+        "Special effects capabilities",
+        "Industry-ready portfolio"
+      ],
+      "career_outcomes": "Launch your career as a professional makeup artist specializing in film, television, and high-definition media. Work on film sets, with production companies, or start your own makeup artistry business.",
+      "prerequisites": "None - Suitable for aspiring and intermediate makeup artists",
+      "instructor": "Professional Film Makeup Artist",
+      "instructor_details": "Experienced makeup artists with extensive film and television industry experience, specializing in both traditional techniques and modern AI-assisted creative processes.",
+      "format": "Practical hands-on training with real film scenarios",
+      "certification": "SMARI Certificate of Completion",
+      "campuses": [
+        "Kampala"
+      ],
+      "application_deadlines": {
+        "Kampala": "Rolling admissions - No deadline"
+      },
+      "partnerships": [
+        "Victoria University Kampala"
+      ]
+    },
+    {
+      "id": "fashion-design",
+      "title": "Fashion Design with AI - Level 1",
+      "category": "media",
+      "level": 1,
+      "duration": "9 Months",
+      "cost": "UGX 395,000",
+      "description": "A comprehensive 9-month, three-semester program designed to take aspiring designers from foundational skills to modern, AI-integrated design process. Students master traditional techniques and learn to leverage AI tools for design ideation, production, and marketing.",
+      "image": "https://res.cloudinary.com/dycczmklj/image/upload/v1770383462/CA-AIF-001-AI-IntroductionToAIFashionDesign_Poster_LT_1_ptcmmr.jpg",
+      "curriculum_modules": [
+        {
+          "name": "Semester 1: Foundation & The Craft (3 Months)",
+          "description": "Fashion design fundamentals with AI mood board generation, textiles and sustainable fashion with AI pattern creation, and pattern making with AI fitting simulations."
+        },
+        {
+          "name": "Semester 2: Development & The Digital Age (3 Months)",
+          "description": "Creative process with AI ideation tools, digital prototyping with 3D garment design and AI simulation, and collection development with virtual fashion photoshoots."
+        },
+        {
+          "name": "Semester 3: Commercialization & The Future of Fashion (3 Months)",
+          "description": "Fashion marketing with AI-powered brand development, ethical manufacturing with AI supply chain optimization, and final collection showcase with AI storytelling."
+        }
+      ],
+      "learning_objectives": [
+        "Understand fashion history, key designers, and fashion cycle evolution",
+        "Master elements of design: color theory, texture, pattern, and silhouette",
+        "Learn fashion illustration for human figure (croquis), garments, and accessories",
+        "Use AI image generators for mood boards and stylistic variations exploration",
+        "Understand different fabrics, their properties, applications, and sustainable alternatives",
+        "Master computer-aided design using Adobe Illustrator and Procreate for technical drawings",
+        "Use AI tools for fabric print generation, pattern creation, and color scheme exploration",
+        "Learn pattern drafting from basic blocks to working patterns for various garments",
+        "Master garment construction, sewing techniques, and machine maintenance",
+        "Use AI for pattern variations and fitting simulations to reduce physical mockups",
+        "Apply trend forecasting using industry publications and AI-powered trend analysis",
+        "Develop unique design concepts using mood boards, research, and AI ideation tools"
+      ],
+      "skills_covered": [
+        "Fashion Design Fundamentals",
+        "Fashion Illustration and Technical Drawing",
+        "Textile Science and Sustainable Practices",
+        "Pattern Making and Garment Construction",
+        "AI-Assisted Design Tools",
+        "3D Garment Design and Simulation",
+        "Fashion Marketing and Branding",
+        "Digital Fashion and Virtual Prototyping",
+        "Sustainable Manufacturing Practices",
+        "Collection Development and Presentation"
+      ],
+      "outcomes": [
+        "Complete fashion design expertise",
+        "AI-integrated design workflow",
+        "Sustainable fashion practices",
+        "Professional collection development",
+        "Fashion business and marketing skills"
+      ],
+      "career_outcomes": "Launch your fashion design career with modern, sustainable, and AI-enhanced skills. Work for fashion houses, start your own fashion label, or specialize in sustainable and digital fashion design.",
+      "prerequisites": "None - Entry level course, requires commitment for 9-month intensive program",
+      "instructor": "Professional Fashion Designer",
+      "instructor_details": "Experienced fashion designers with industry experience in both traditional craftsmanship and modern AI-assisted design processes, emphasizing sustainable and ethical practices.",
+      "format": "Intensive hands-on design and construction training",
+      "certification": "SMARI Certificate of Completion",
+      "campuses": [
+        "Kampala"
+      ],
+      "application_deadlines": {
+        "Kampala": "Rolling admissions - No deadline"
+      },
+      "partnerships": [
+        "Victoria University Kampala"
+      ]
+    },
+    {
+      "id": "ai-digital-literacy",
+      "title": "Introduction to AI and Digital Literacy - Level 1",
+      "category": "personal",
+      "level": 1,
+      "duration": "3 Months",
+      "cost": "UGX 395,000",
+      "description": "A foundational course providing modern digital literacy with focus on responsible, critical, and effective use of AI tools. Designed for learners of all backgrounds to navigate the AI-driven workplace and digital society with essential skills and ethical understanding.",
+      "image": "https://ik.imagekit.io/67mog36hf/Flowback/Forward%20111/engineers-discussing-artificial-intelligence-in-la-2025-03-06-03-33-01-utc.jpg?updatedAt=1758475050694",
+      "curriculum_modules": [
+        {
+          "name": "Digital Literacy in the AI Era",
+          "description": "Computer and internet fundamentals, cloud computing and data management, online safety and digital footprint management, and information literacy with media evaluation."
+        },
+        {
+          "name": "AI Literacy & Applications",
+          "description": "Introduction to AI concepts and real-world applications, generative AI and prompt engineering mastery, AI-powered productivity tools for work and life, and evaluating AI with human-AI collaboration."
+        },
+        {
+          "name": "Advanced Topics & Project",
+          "description": "AI and the evolving workforce with future-proofing skills, digital citizenship and AI ethics, final project planning integrating digital and AI tools, and showcase with graduation ceremony."
+        }
+      ],
+      "learning_objectives": [
+        "Master computer fundamentals: hardware, software, operating systems, and file management",
+        "Navigate internet effectively using browsers, search engines, and online communication tools",
+        "Use cloud computing services for file storage, sharing, and collaboration",
+        "Understand cybersecurity basics: strong passwords, two-factor authentication, and scam recognition",
+        "Manage digital footprint and privacy settings across online platforms",
+        "Critically evaluate online information, check for bias, and identify fake news",
+        "Use AI tools to summarize content while fact-checking for accuracy and reliability",
+        "Understand artificial intelligence, machine learning, and their real-world applications",
+        "Master prompt engineering for high-quality outputs from AI tools like ChatGPT and Midjourney",
+        "Apply AI-powered productivity tools for text, image, and video creation",
+        "Evaluate AI-generated content critically and collaborate effectively with AI systems",
+        "Understand AI's impact on jobs and develop strategies for integrating AI into career development"
+      ],
+      "skills_covered": [
+        "Computer and Internet Fundamentals",
+        "Cloud Computing and Data Management",
+        "Cybersecurity and Online Safety",
+        "Digital Privacy and Footprint Management",
+        "Media Literacy and Fact-Checking",
+        "AI Concepts and Applications",
+        "Prompt Engineering",
+        "AI-Powered Productivity Tools",
+        "Critical AI Evaluation",
+        "Digital Entrepreneurship"
+      ],
+      "outcomes": [
+        "Complete digital literacy foundation",
+        "AI tool proficiency",
+        "Critical thinking for digital content",
+        "Cybersecurity awareness",
+        "Future-ready digital skills"
+      ],
+      "career_outcomes": "Build essential digital and AI literacy skills for success in any modern career. Excellent foundation for entrepreneurs, professionals seeking digital transformation, and anyone preparing for the AI-driven future workplace.",
+      "prerequisites": "None - Designed for learners of all backgrounds and experience levels",
+      "instructor": "Digital Literacy and AI Specialist",
+      "instructor_details": "Experienced digital educators with expertise in both fundamental computer skills and cutting-edge AI applications, committed to bridging the digital divide.",
+      "format": "Practical hands-on training with real-world applications",
+      "certification": "SMARI Certificate of Completion",
+      "campuses": [
+        "Kampala"
+      ],
+      "application_deadlines": {
+        "Kampala": "Rolling admissions - No deadline"
+      },
+      "partnerships": [
+        "Victoria University Kampala"
+      ]
+    },
+    {
+      "id": "phone-video-production",
+      "title": "Phone Video Production - Level 1",
+      "category": "media",
+      "level": 1,
+      "duration": "1 Month",
+      "cost": "UGX 395,000",
+      "description": "An intensive, hands-on course designed to transform smartphones into powerful video production tools. Learn the complete video creation workflow from planning and shooting to editing and publishing, leveraging the accessibility and power of mobile devices for professional content creation.",
+      "image": "https://res.cloudinary.com/dycczmklj/image/upload/v1770384876/professional-vs-cell-phone-video-vmg-studios_ah27d7.webp",
+      "curriculum_modules": [
+        {
+          "name": "Pre-Production & Planning",
+          "description": "Mobile videography fundamentals including camera settings and external gear, storytelling and scripting for short-form content, and visual storytelling techniques with composition and framing."
+        },
+        {
+          "name": "Production & Shooting",
+          "description": "Optimizing shoots for indoor/outdoor conditions with lighting techniques, capturing quality audio with external microphones, and advanced mobile shooting including time-lapses and cinematic movements."
+        },
+        {
+          "name": "Post-Production & Editing",
+          "description": "Mobile editing software mastery (CapCut, Adobe Premiere Rush, Kinemaster), enhancing edits with transitions, text, and color grading, and sound design with music and effect integration."
+        },
+        {
+          "name": "Distribution & Final Project",
+          "description": "Platform optimization for TikTok, Instagram Reels, and YouTube Shorts, publishing strategies for audience building, and final project showcase with certificate presentation."
+        }
+      ],
+      "learning_objectives": [
+        "Master smartphone camera settings including resolution, frame rate, and manual controls",
+        "Use external gear effectively: microphones, tripods, gimbals for professional results",
+        "Develop story ideas into structured scripts and detailed shot lists",
+        "Apply composition principles, shot sizes, and camera angles for visual storytelling",
+        "Execute smooth camera movements and professional framing using mobile devices",
+        "Optimize shooting for various lighting conditions, both indoor and outdoor",
+        "Use natural and artificial light effectively to create different moods",
+        "Record clear audio using external microphones for interviews and ambient sounds",
+        "Master advanced mobile techniques: time-lapses, slow motion, and hyper-lapses",
+        "Navigate mobile editing apps for trimming, arranging, and enhancing footage",
+        "Apply transitions, text, motion graphics, and color correction for professional results",
+        "Optimize videos for different social media platforms with proper aspect ratios and subtitling"
+      ],
+      "skills_covered": [
+        "Mobile Camera Operation",
+        "Smartphone Cinematography",
+        "Mobile Audio Recording",
+        "Visual Storytelling Techniques",
+        "Mobile Video Editing",
+        "Color Correction and Grading",
+        "Social Media Optimization",
+        "Content Distribution Strategies",
+        "Mobile Gear and Accessories",
+        "Platform-Specific Content Creation"
+      ],
+      "outcomes": [
+        "Professional mobile video production",
+        "Platform-optimized content creation",
+        "Complete mobile editing workflow",
+        "Social media content mastery",
+        "Mobile cinematography expertise"
+      ],
+      "career_outcomes": "Perfect for content creators, marketers, social media managers, and entrepreneurs who want to create compelling visual content efficiently using accessible mobile technology.",
+      "prerequisites": "None - Entry level course, smartphone required",
+      "instructor": "Professional Mobile Content Creator",
+      "instructor_details": "Experienced content creators with expertise in mobile video production, social media strategy, and smartphone cinematography techniques.",
+      "format": "Intensive hands-on mobile production training",
+      "certification": "SMARI Certificate of Completion",
+      "campuses": [
+        "Kampala"
+      ],
+      "application_deadlines": {
+        "Kampala": "Rolling admissions - No deadline"
+      },
+      "partnerships": [
+        "Victoria University Kampala"
+      ]
+    },
+    {
+      "id": "tv-radio-presentation",
+      "title": "TV & Radio Presentation - Level 1",
+      "category": "media",
+      "level": 1,
+      "duration": "1 Month",
+      "cost": "UGX 395,000",
+      "description": "An intensive, hands-on course designed to equip aspiring presenters with core skills needed for both television and radio. Focus on building confidence, mastering vocal techniques, understanding on-air protocols, and culminating in a professional portfolio piece.",
+      "image": "https://ik.imagekit.io/67mog36hf/Flowback/Forward%20111/Smari/pov-of-young-blogger-filming-social-media-podcast-2025-02-19-10-18-24-utc.jpg?updatedAt=1758627539078",
+      "curriculum_modules": [
+        {
+          "name": "The Foundational Skills",
+          "description": "Vocal technique and delivery mastery, presence and body language for TV and radio energy translation, scripting and research for effective content, and audience connection techniques."
+        },
+        {
+          "name": "The Radio Environment",
+          "description": "Studio basics and equipment operation, radio show formats and adaptation, interview techniques for radio with active listening, and live broadcast simulation with spontaneity management."
+        },
+        {
+          "name": "The Television Environment",
+          "description": "On-camera techniques with teleprompters and talkback systems, visual presentation including attire and makeup, conducting professional TV interviews, and handling live TV situations."
+        },
+        {
+          "name": "The Final Showcase",
+          "description": "Building professional TV demo reel showcasing versatility, producing polished radio demo highlighting voice skills, portfolio and career strategy development, and final on-air presentation with feedback."
+        }
+      ],
+      "learning_objectives": [
+        "Master breath control, projection, articulation, pace, and pause for maximum impact",
+        "Develop confident movement and body language for TV while conveying energy for radio",
+        "Write effective scripts for different formats from news bulletins to show segments",
+        "Connect with audiences through personal, engaging tone that feels intimate and conversational",
+        "Operate radio studio equipment: microphones, mixing consoles, and follow on-air cues",
+        "Adapt presentation style for different radio formats: talk shows, music shows, live reads",
+        "Research, prepare for, and conduct engaging radio interviews with effective questioning",
+        "Handle spontaneity and quick thinking in live radio broadcast scenarios",
+        "Master teleprompter use, talkback earpieces, and camera angle understanding",
+        "Understand visual presence requirements: attire, makeup, and on-camera presentation",
+        "Conduct professional on-camera interviews working with lighting and camera operators",
+        "Prepare for and handle unexpected events, breaking news, and time constraints in live TV"
+      ],
+      "skills_covered": [
+        "Professional Vocal Techniques",
+        "On-Camera Presentation",
+        "Radio Broadcasting Skills",
+        "Interview Techniques",
+        "Script Writing and Research",
+        "Studio Equipment Operation",
+        "Live Broadcast Management",
+        "Professional Presentation",
+        "Demo Reel Production",
+        "Media Industry Knowledge"
+      ],
+      "outcomes": [
+        "Professional broadcasting skills",
+        "Confident on-air presentation",
+        "Interview and research expertise",
+        "TV and radio demo reels",
+        "Media career preparation"
+      ],
+      "career_outcomes": "Launch your broadcasting career with professional on-air skills for television and radio. Work as a presenter, news anchor, radio host, or media personality in Uganda's growing broadcast industry.",
+      "prerequisites": "None - Entry level course for aspiring presenters",
+      "instructor": "Professional TV and Radio Presenter",
+      "instructor_details": "Experienced broadcasting professionals with extensive on-air experience in both television and radio, dedicated to developing confident and skilled presenters.",
+      "format": "Intensive hands-on studio training",
+      "certification": "SMARI Certificate of Completion",
+      "campuses": [
+        "Kampala"
+      ],
+      "application_deadlines": {
+        "Kampala": "Rolling admissions - No deadline"
+      },
+      "partnerships": [
+        "Victoria University Kampala"
+      ]
+    },
+    {
+      "id": "public-speaking",
+      "title": "Public Speaking - Level 1",
+      "category": "personal",
+      "level": 1,
+      "duration": "3 Months",
+      "cost": "UGX 395,000",
+      "description": "A comprehensive course designed to take students from novice to confident and competent public speakers. The curriculum focuses on theory, practical application, and performance with heavy emphasis on consistent practice and peer feedback to manage nervousness, structure compelling speeches, and deliver presentations with impact and clarity.",
+      "image": "https://ik.imagekit.io/67mog36hf/Flowback/Forward%20111/Smari/black-businessman-presenting-business-seminar-to-a-2024-10-19-15-24-44-utc.jpg?updatedAt=1758649751201",
+      "curriculum_modules": [
+        {
+          "name": "The Foundation - Overcoming Fear and Mastering the Basics",
+          "description": "Mindset and anxiety management techniques, nonverbal communication and body language mastery, vocal variety and clarity development, and speech structure and organization principles."
+        },
+        {
+          "name": "The Content - Inform, Persuade, and Impromptu",
+          "description": "Informative speech crafting and delivery, persuasive speech techniques with pathos, logos, and ethos, impromptu speaking and quick thinking skills, and visual aids with audience engagement strategies."
+        },
+        {
+          "name": "The Performer - Final Polishing and Advanced Skills",
+          "description": "Storytelling mastery and emotional connection, Q&A session handling and feedback management, final presentation preparation with individual coaching, and showcase graduation with 7-10 minute presentations."
+        }
+      ],
+      "learning_objectives": [
+        "Identify and reframe public speaking fears using relaxation techniques and positive visualization",
+        "Master confident posture, intentional hand gestures, and maintaining effective eye contact",
+        "Develop powerful vocal projection, pace control, pitch variation, and eliminate filler words",
+        "Structure compelling speeches using introduction-body-conclusion format with clear organization",
+        "Research and organize information clearly for educational and informative presentations",
+        "Craft persuasive arguments using emotional appeal (pathos), logical reasoning (logos), and credibility (ethos)",
+        "Think quickly and deliver coherent messages in impromptu speaking scenarios",
+        "Design and use effective visual aids without becoming reliant on them",
+        "Engage audiences through interaction, storytelling, and dynamic presentation techniques",
+        "Use personal anecdotes and vivid language for emotional audience connection",
+        "Anticipate questions, maintain composure, and provide clear, concise answers during Q&A sessions",
+        "Deliver polished 7-10 minute presentations demonstrating mastery of all learned skills"
+      ],
+      "skills_covered": [
+        "Anxiety Management and Confidence Building",
+        "Professional Body Language",
+        "Vocal Variety and Clarity",
+        "Speech Structure and Organization",
+        "Persuasive Speaking Techniques",
+        "Impromptu Speaking Skills",
+        "Visual Aid Design and Usage",
+        "Audience Engagement Strategies",
+        "Storytelling for Impact",
+        "Q&A Session Management"
+      ],
+      "outcomes": [
+        "Confident public speaking ability",
+        "Professional presentation skills",
+        "Anxiety management techniques",
+        "Persuasive communication mastery",
+        "Advanced storytelling capabilities"
+      ],
+      "career_outcomes": "Build confidence and communication skills essential for professional success in any field. Excellent for leaders, entrepreneurs, professionals, and anyone seeking to improve their presentation and communication abilities.",
+      "prerequisites": "None - Entry level course designed for all skill levels",
+      "instructor": "Professional Public Speaking Coach",
+      "instructor_details": "Experienced communication professionals and certified public speaking coaches dedicated to building speaking confidence and presentation excellence.",
+      "format": "Interactive practice-based training with peer feedback",
+      "certification": "SMARI Certificate of Completion",
+      "campuses": [
+        "Kampala"
+      ],
+      "application_deadlines": {
+        "Kampala": "Rolling admissions - No deadline"
+      },
+      "partnerships": [
+        "Victoria University Kampala"
+      ]
+    },
+    {
+      "id": "hospitality-management",
+      "title": "Hospitality Management - Level 1",
+      "category": "hospitality",
+      "level": 1,
+      "duration": "3 Months",
+      "cost": "UGX 395,000",
+      "description": "A comprehensive Hospitality Business course designed to provide essential skills for excelling in the dynamic hospitality sector. This Level 1 program offers an in-depth learning experience covering key strategies for sales, customer relationship management, market analysis, and effective communication techniques specifically for hospitality settings.",
+      "image": "https://ik.imagekit.io/67mog36hf/Flowback/Forward%20111/Pi7_Image_Tool/african-american-man-serving-cocktails-at-bar-hol-2025-09-12-16-42-23-utc.jpg?updatedAt=1758637878391",
+      "curriculum_modules": [
+        {
+          "name": "Sales Strategies",
+          "description": "Principles of successful sales techniques tailored to the hospitality sector."
+        },
+        {
+          "name": "Customer Relationship Management",
+          "description": "How to build and maintain strong relationships with customers to enhance loyalty and satisfaction."
+        },
+        {
+          "name": "Market Analysis",
+          "description": "Skills in analyzing market trends and data to make informed business decisions."
+        },
+        {
+          "name": "Communication Techniques",
+          "description": "Effective communication skills essential for interacting with customers and closing deals."
+        }
+      ],
+      "learning_objectives": [
+        "Understand the principles of successful sales techniques tailored to the hospitality sector",
+        "Learn how to build and maintain strong relationships with customers to enhance loyalty and satisfaction",
+        "Gain skills in analyzing market trends and data to make informed business decisions",
+        "Develop effective communication skills that are essential for interacting with customers and closing deals"
+      ],
+      "skills_covered": [
+        "Hospitality Sales Techniques",
+        "Customer Service Excellence",
+        "Operations Management",
+        "Industry Standards",
+        "Professional Communication"
+      ],
+      "outcomes": [
+        "Customer service excellence",
+        "Operations management",
+        "Industry standards",
+        "Professional skills"
+      ],
+      "career_outcomes": "Excel in the hospitality industry and deliver exceptional customer experiences. Transform your career potential and become a skilled hospitality professional in bars, restaurants, hotels, or other hospitality settings.",
+      "prerequisites": "None - Entry level course",
+      "instructor": "Experienced Industry Professional",
+      "instructor_details": "Experienced instructors dedicated to helping students succeed by providing knowledge and skills needed to thrive in the competitive hospitality industry.",
+      "format": "Practical hands-on training",
+      "certification": "SMARI Certificate of Completion",
+      "campuses": [
+        "Kampala"
+      ],
+      "application_deadlines": {
+        "Kampala": "Rolling admissions - No deadline"
+      },
+      "partnerships": [
+        "Victoria University Kampala"
+      ]
+    },
+    {
+      "id": "acting",
+      "title": "Acting and Performing Arts - Level 1",
+      "category": "media",
+      "level": 1,
+      "duration": "3 Months",
+      "cost": "UGX 395,000",
+      "description": "Develop acting skills, stage presence, and performance techniques for theater, film, and television.",
+      "image": "https://ik.imagekit.io/67mog36hf/Flowback/in-a-classroom-at-school-students-and-teacher-stud-2025-03-09-14-10-18-utc.jpg?updatedAt=1758394587643",
+      "curriculum_modules": [
+        {
+          "name": "Acting Techniques",
+          "description": "Master fundamental acting methods and approaches."
+        },
+        {
+          "name": "Stage Presence",
+          "description": "Develop commanding presence and confidence on stage."
+        },
+        {
+          "name": "Character Development",
+          "description": "Learn to create and embody diverse characters."
+        },
+        {
+          "name": "Performance Confidence",
+          "description": "Build confidence for various performance scenarios."
+        }
+      ],
+      "learning_objectives": [
+        "Master fundamental acting techniques",
+        "Develop stage presence and confidence",
+        "Learn character development methods",
+        "Build performance confidence"
+      ],
+      "skills_covered": [
+        "Acting Techniques",
+        "Stage Presence",
+        "Character Development",
+        "Performance Confidence"
+      ],
+      "outcomes": [
+        "Acting techniques",
+        "Stage presence",
+        "Character development",
+        "Performance confidence"
+      ],
+      "career_outcomes": "Develop professional acting skills for opportunities in theater, film, and television.",
+      "prerequisites": "None - Entry level course",
+      "instructor": "Experienced Industry Professional",
+      "instructor_details": "Experienced instructors dedicated to developing performance skills and artistic expression.",
+      "format": "Practical hands-on training",
+      "certification": "SMARI Certificate of Completion",
+      "campuses": [
+        "Kampala"
+      ],
+      "application_deadlines": {
+        "Kampala": "Rolling admissions - No deadline"
+      },
+      "partnerships": [
+        "Victoria University Kampala"
+      ]
+    },
+    {
+      "id": "tour-guide",
+      "title": "Tour Guide - Level 1",
+      "category": "personal",
+      "level": 1,
+      "duration": "3 Months",
+      "cost": "UGX 395,000",
+      "description": "Develop skills in tourism, cultural presentation, and professional guiding techniques.",
+      "image": "https://res.cloudinary.com/dycczmklj/image/upload/v1770384412/CATALOG_HospitalityTourismManagement_avypcv.png",
+      "curriculum_modules": [
+        {
+          "name": "Tourism Knowledge",
+          "description": "Learn about tourism industry and local attractions."
+        },
+        {
+          "name": "Cultural Presentation",
+          "description": "Master the art of presenting cultural information effectively."
+        },
+        {
+          "name": "Group Management",
+          "description": "Develop skills in managing and leading tourist groups."
+        },
+        {
+          "name": "Professional Guiding",
+          "description": "Learn professional tour guiding standards and techniques."
+        }
+      ],
+      "learning_objectives": [
+        "Develop comprehensive tourism knowledge",
+        "Master cultural presentation skills",
+        "Learn group management techniques",
+        "Understand professional guiding standards"
+      ],
+      "skills_covered": [
+        "Tourism Knowledge",
+        "Cultural Presentation",
+        "Group Management",
+        "Professional Guiding",
+        "Customer Service"
+      ],
+      "outcomes": [
+        "Tourism knowledge",
+        "Cultural presentation",
+        "Group management",
+        "Professional guiding"
+      ],
+      "career_outcomes": "Excel in the tourism industry as a professional tour guide with comprehensive knowledge and skills.",
+      "prerequisites": "None - Entry level course",
+      "instructor": "Experienced Industry Professional",
+      "instructor_details": "Experienced tourism professionals with extensive knowledge of the industry.",
+      "format": "Practical hands-on training",
+      "certification": "SMARI Certificate of Completion",
+      "campuses": [
+        "Kampala"
+      ],
+      "application_deadlines": {
+        "Kampala": "Rolling admissions - No deadline"
+      },
+      "partnerships": [
+        "Victoria University Kampala"
+      ]
+    },
+    {
+      "id": "drone-piloting",
+      "title": "Drone Piloting & Aerial Photography - Level 1",
+      "category": "technology",
+      "level": 1,
+      "duration": "3 Months",
+      "cost": "UGX 395,000",
+      "description": "A comprehensive course covering drone operation, aerial photography, videography, and commercial applications. Learn to operate drones safely and professionally while mastering aerial cinematography techniques for various industries including real estate, events, and media production.",
+      "image": "https://res.cloudinary.com/dycczmklj/image/upload/v1770385225/becoming-a-drone-pilot-scaled-1_glqvcp.jpg",
+      "curriculum_modules": [
+        {
+          "name": "Drone Technology and Safety",
+          "description": "Understanding drone technology, safety protocols, regulations, and legal requirements for commercial drone operations."
+        },
+        {
+          "name": "Flight Operations and Control",
+          "description": "Hands-on flight training, navigation techniques, weather considerations, and emergency procedures for safe drone operation."
+        },
+        {
+          "name": "Aerial Photography and Videography",
+          "description": "Camera settings, composition techniques, shot planning, and post-production workflow for professional aerial content creation."
+        },
+        {
+          "name": "Commercial Applications and Business",
+          "description": "Industry applications, client management, pricing strategies, and building a drone services business in various sectors."
+        }
+      ],
+      "learning_objectives": [
+        "Understand drone technology, components, and different types of unmanned aircraft systems",
+        "Master aviation regulations, safety protocols, and legal requirements for commercial drone operations",
+        "Perform pre-flight inspections, risk assessments, and safety procedures",
+        "Execute precise flight maneuvers, navigation, and emergency response procedures",
+        "Apply weather analysis and environmental factors affecting drone operations",
+        "Master camera settings, gimbal control, and aerial photography composition techniques",
+        "Plan and execute aerial video shoots with smooth movements and cinematic techniques",
+        "Use professional editing software for aerial footage post-production",
+        "Understand commercial applications in real estate, construction, agriculture, and media",
+        "Develop business skills for drone services including client acquisition and project management",
+        "Create professional portfolios showcasing aerial photography and videography work",
+        "Obtain necessary certifications and permits for commercial drone operations"
+      ],
+      "skills_covered": [
+        "Drone Operation and Flight Control",
+        "Aviation Safety and Regulations",
+        "Aerial Photography Techniques",
+        "Aerial Videography and Cinematography",
+        "Post-Production and Editing",
+        "Commercial Drone Applications",
+        "Risk Assessment and Management",
+        "Weather Analysis for Flight Operations",
+        "Business Development for Drone Services",
+        "Professional Portfolio Development"
+      ],
+      "outcomes": [
+        "Professional drone piloting skills",
+        "Aerial photography and videography expertise",
+        "Commercial drone operation certification",
+        "Safety and regulatory compliance",
+        "Drone services business knowledge"
+      ],
+      "career_outcomes": "Launch your career in the growing drone industry with professional piloting and aerial content creation skills. Work as a commercial drone pilot, aerial photographer, or start your own drone services business serving real estate, construction, events, and media industries.",
+      "prerequisites": "None - Entry level course suitable for beginners",
+      "instructor": "Certified Commercial Drone Pilot",
+      "instructor_details": "Experienced commercial drone pilots with extensive flight experience and expertise in various industry applications, certified by aviation authorities.",
+      "format": "Practical hands-on flight training with real-world applications",
+      "certification": "SMARI Certificate of Completion",
+      "campuses": [
+        "Kampala"
+      ],
+      "application_deadlines": {
+        "Kampala": "Rolling admissions - No deadline"
+      },
+      "partnerships": [
+        "Victoria University Kampala"
+      ]
+    },
+    {
+      "id": "urban-gardening",
+      "title": "Climate Change, Urban Home Gardening - Level 1",
+      "category": "personal",
+      "level": 1,
+      "duration": "3 Months",
+      "cost": "UGX 395,000",
+      "description": "A comprehensive course that combines climate change awareness with practical urban gardening skills. Learn sustainable practices, understand environmental impacts, and develop skills to grow food at home while contributing to climate resilience and food security in urban environments.",
+      "image": "https://ik.imagekit.io/67mog36hf/Flowback/Forward%20111/Smari/woman-with-braids-and-glasses-is-a-gardener-the-nu-2024-12-10-01-29-30-utc.jpg?updatedAt=1758627561968",
+      "curriculum_modules": [
+        {
+          "name": "Climate Change Fundamentals and Environmental Awareness",
+          "description": "Understanding climate change science, environmental impacts, sustainability principles, and the role of urban agriculture in climate adaptation and mitigation."
+        },
+        {
+          "name": "Urban Gardening Techniques and Food Production",
+          "description": "Practical gardening skills including soil management, plant selection, container gardening, vertical growing systems, and optimizing limited urban spaces for food production."
+        },
+        {
+          "name": "Sustainable Practices and Community Impact",
+          "description": "Water conservation, composting, natural pest management, seed saving, and building sustainable food systems that contribute to community resilience and environmental health."
+        }
+      ],
+      "learning_objectives": [
+        "Understand climate change science, causes, and environmental impacts on food systems",
+        "Learn sustainable living practices and their role in climate action",
+        "Master urban gardening techniques for small spaces and containers",
+        "Develop soil health management and organic growing methods",
+        "Plan and design productive home gardens with seasonal crop rotation",
+        "Implement water-efficient irrigation and rainwater harvesting systems",
+        "Create composting systems to reduce waste and improve soil fertility",
+        "Use natural and organic methods for pest and disease management",
+        "Understand plant nutrition, fertilization, and companion planting strategies",
+        "Learn seed starting, propagation, and seed saving techniques",
+        "Develop food preservation and storage methods for home-grown produce",
+        "Build community networks for sharing knowledge, seeds, and resources"
+      ],
+      "skills_covered": [
+        "Climate Change Science and Environmental Literacy",
+        "Urban and Container Gardening",
+        "Sustainable Agriculture Practices",
+        "Soil Health and Composting",
+        "Water Conservation and Management",
+        "Organic Pest and Disease Control",
+        "Plant Propagation and Seed Saving",
+        "Seasonal Garden Planning",
+        "Food Preservation Techniques",
+        "Community Building and Resource Sharing"
+      ],
+      "outcomes": [
+        "Climate change awareness and action",
+        "Productive urban garden setup",
+        "Sustainable food production skills",
+        "Environmental stewardship practices",
+        "Community resilience building"
+      ],
+      "career_outcomes": "Develop valuable skills for sustainable living while contributing to climate action and food security. Apply knowledge in environmental education, urban agriculture initiatives, sustainable development projects, or start your own urban farming enterprise.",
+      "prerequisites": "None - Entry level course suitable for beginners interested in sustainability and gardening",
+      "instructor": "Environmental Educator and Urban Agriculture Specialist",
+      "instructor_details": "Experienced environmental educators and urban agriculture specialists with expertise in sustainable practices, climate action, and community-based food systems.",
+      "format": "Practical hands-on training with real garden projects",
+      "certification": "SMARI Certificate of Completion",
+      "campuses": [
+        "Kampala"
+      ],
+      "application_deadlines": {
+        "Kampala": "August 25, 2025 (September intake), January 25, 2026 (February intake)"
+      },
+      "intake_dates": {
+        "September 2025": "September 9, 2025",
+        "February 2026": "February 2, 2026"
+      },
+      "important_dates": {
+        "Application Deadline (September Intake)": "August 25, 2025",
+        "September Intake Starts": "September 9, 2025",
+        "Application Deadline (February Intake)": "January 25, 2026",
+        "February Intake Starts": "February 2, 2026",
+        "Course Duration": "3 Months per intake"
+      },
+      "partnerships": [
+        "Victoria University Kampala"
+      ]
+    },
+    {
+      "id": "dj-vj",
+      "title": "DJ, VJ & Artist Management with AI - Level 1",
+      "category": "media",
+      "level": 1,
+      "duration": "3 Months",
+      "cost": "UGX 395,000",
+      "description": "A comprehensive three-month course that develops aspiring artists into skilled DJs, creative VJs, and savvy artist managers by leveraging modern AI tools. Learn practical skills in music mixing, visual performance, and artist branding while mastering AI-powered workflow enhancement.",
+      "image": "https://ik.imagekit.io/67mog36hf/Flowback/Forward%20111/Smari/african-dj-playing-music-at-cocktail-bar-outdoor-2025-02-21-03-26-47-utc.jpg?updatedAt=1758646271248",
+      "curriculum_modules": [
+        {
+          "name": "Foundational Skills and AI Integration",
+          "description": "Month 1: Establish core DJing and VJing technical skills while introducing AI tools for music discovery, stem separation, visual generation, and performance enhancement. Master beatmatching, visual effects, and audio-visual synchronization."
+        },
+        {
+          "name": "Artist Branding and AI-Powered Marketing",
+          "description": "Month 2: Focus on business development, brand identity creation, social media marketing automation, data-driven decision making, and AI-assisted contract management. Learn to build sustainable artist careers."
+        },
+        {
+          "name": "Advanced Performance and Artist Management",
+          "description": "Month 3: Advanced live performance techniques, crowd reading, complex VJ setups, comprehensive career strategy development, and final showcase preparation with AI-driven portfolio creation."
+        }
+      ],
+      "learning_objectives": [
+        "Master industry-standard DJ software and hardware including CDJs and mixers",
+        "Learn advanced mixing techniques including harmonic mixing and live remixing",
+        "Use AI tools for music discovery, track analysis, and playlist optimization",
+        "Implement AI stem separation for live track manipulation and creative mixing",
+        "Create professional VJ performances using audio-reactive visual software",
+        "Generate unique AI-powered visuals and real-time video content for performances",
+        "Develop compelling artist brand identity using AI design and marketing tools",
+        "Automate social media marketing and analyze engagement data with AI platforms",
+        "Use AI for data-driven career decisions and audience targeting strategies",
+        "Master advanced performance techniques for reading crowds and adapting sets",
+        "Create comprehensive artist management strategies with AI-assisted planning",
+        "Build professional portfolios combining performance skills with AI technology"
+      ],
+      "skills_covered": [
+        "Professional DJing and Music Mixing",
+        "VJing and Visual Performance",
+        "AI-Powered Music Production",
+        "Audio-Visual Synchronization",
+        "Artist Brand Development",
+        "AI-Driven Marketing Automation",
+        "Social Media Strategy and Analytics",
+        "Performance Psychology and Crowd Reading",
+        "Artist Management and Career Planning",
+        "AI Contract and Business Management",
+        "Portfolio Development",
+        "Live Performance and Technical Setup"
+      ],
+      "outcomes": [
+        "Professional DJ and VJ performance capabilities",
+        "AI-enhanced creative workflow mastery",
+        "Comprehensive artist management skills",
+        "Data-driven marketing and branding expertise",
+        "Industry-ready performance portfolio with AI integration"
+      ],
+      "career_outcomes": "Excel in Uganda's dynamic music and entertainment industry. Work as a professional DJ, VJ, artist manager, or entertainment entrepreneur using cutting-edge AI tools to enhance creativity and business success.",
+      "prerequisites": "None - Entry level course suitable for music enthusiasts and aspiring entertainment professionals",
+      "instructor": "Professional DJ, VJ, and Entertainment Industry Manager",
+      "instructor_details": "Experienced entertainment industry professionals with expertise in both traditional performance techniques and modern AI-assisted workflows, committed to providing cutting-edge skills for the digital music industry.",
+      "format": "Practical hands-on training with live performance opportunities and AI tool integration",
+      "certification": "SMARI Certificate of Completion",
+      "campuses": [
+        "Kampala"
+      ],
+      "application_deadlines": {
+        "Kampala": "Rolling admissions - No deadline"
+      },
+      "partnerships": [
+        "Victoria University Kampala"
+      ]
+    },
+    {
+      "id": "event-management",
+      "title": "Event Management with AI Integration - Level 1",
+      "category": "marketing",
+      "level": 1,
+      "duration": "3 Months",
+      "cost": "UGX 395,000",
+      "description": "A comprehensive three-month course that equips aspiring event professionals with fundamental skills of planning, marketing, and execution, all while integrating cutting-edge AI tools to enhance efficiency and creative output. Learn to organize successful events using AI-driven strategies and modern technology.",
+      "image": "https://ik.imagekit.io/67mog36hf/Flowback/Forward%20111/Pi7_Image_Tool/a-crowd-of-people-celebrating-and-dancing-and-havi-2025-03-12-22-08-30-utc.jpg?updatedAt=1758646736589",
+      "curriculum_modules": [
+        {
+          "name": "Fundamentals of Event Planning and AI Assistance",
+          "description": "Month 1: Establish strong foundation in event management principles while introducing AI tools for planning, budgeting, venue selection, and risk management. Master the essentials of professional event organization."
+        },
+        {
+          "name": "Marketing, Promotion, and AI Automation",
+          "description": "Month 2: Focus on AI-driven event marketing strategies, content creation with AI visuals, automated promotion systems, ticket sales optimization, and innovative attendee engagement techniques using technology."
+        },
+        {
+          "name": "Execution, Evaluation, and Professional Development",
+          "description": "Month 3: Cover practical event execution, crisis management, AI-powered post-event analysis, virtual and hybrid event models, and comprehensive portfolio development for career advancement."
+        }
+      ],
+      "learning_objectives": [
+        "Understand comprehensive event management principles and industry best practices",
+        "Use AI tools for efficient event planning, budgeting, and resource allocation",
+        "Master venue and vendor selection processes with AI-assisted research and comparison",
+        "Implement risk management strategies and legal compliance using automated systems",
+        "Develop AI-driven marketing strategies for event promotion and audience targeting",
+        "Create engaging content and visuals using AI tools for event marketing campaigns",
+        "Optimize ticket sales and registration processes with automated systems and analytics",
+        "Design innovative attendee experiences using AI-powered engagement technologies",
+        "Execute professional event day operations with digital management tools",
+        "Conduct comprehensive post-event analysis using AI-powered reporting and insights",
+        "Plan and manage virtual and hybrid events using modern technology platforms",
+        "Build professional event management portfolio showcasing AI integration expertise"
+      ],
+      "skills_covered": [
+        "Comprehensive Event Planning and Strategy",
+        "AI-Assisted Budget and Resource Management",
+        "Venue and Vendor Selection and Negotiation",
+        "Risk Management and Legal Compliance",
+        "AI-Driven Marketing and Promotion",
+        "Content Creation with AI Tools",
+        "Ticket Sales and Registration Systems",
+        "Attendee Experience Design",
+        "Event Day Operations and Crisis Management",
+        "Post-Event Analysis and Reporting",
+        "Virtual and Hybrid Event Management",
+        "Professional Portfolio Development"
+      ],
+      "outcomes": [
+        "Complete event management workflow expertise",
+        "AI-integrated planning and marketing skills",
+        "Professional crisis management and problem-solving abilities",
+        "Data-driven event analysis and optimization",
+        "Industry-ready portfolio with modern technology integration"
+      ],
+      "career_outcomes": "Launch your career in Uganda's growing events and hospitality industry. Work as an event manager, wedding planner, corporate event coordinator, or start your own event management company with modern AI-enhanced skills.",
+      "prerequisites": "None - Entry level course suitable for individuals interested in event planning and hospitality management",
+      "instructor": "Professional Event Manager and Hospitality Specialist",
+      "instructor_details": "Experienced event management professionals with expertise in both traditional event planning and modern AI-assisted workflows, dedicated to providing practical, industry-relevant skills for successful event careers.",
+      "format": "Practical hands-on training with real event planning projects and AI tool integration",
+      "certification": "SMARI Certificate of Completion",
+      "campuses": [
+        "Kampala"
+      ],
+      "application_deadlines": {
+        "Kampala": "Rolling admissions - No deadline"
+      },
+      "partnerships": [
+        "Victoria University Kampala"
+      ]
+    },
+    {
+      "id": "real-estate-management",
+      "title": "Real Estate Management - Level 1",
+      "category": "business-management",
+      "level": 1,
+      "duration": "1 Month",
+      "cost": "UGX 395,000",
+      "description": "Practical course covering property sales, leasing workflows, client management, and market analysis for real estate professionals.",
+      "image": "https://res.cloudinary.com/dycczmklj/image/upload/v1770385227/image2-1_gadbxb.jpg",
+      "curriculum_modules": [
+        {
+          "name": "Real Estate Fundamentals",
+          "description": "Property types, market structures, and industry regulations."
+        },
+        {
+          "name": "Property Sales Process",
+          "description": "Lead generation, listing preparation, marketing, and closing techniques."
+        },
+        {
+          "name": "Leasing and Property Management",
+          "description": "Tenant screening, rent collection, and maintenance planning."
+        },
+        {
+          "name": "Valuation and Market Analysis",
+          "description": "Pricing strategies, comparative market analysis, and investment basics."
+        }
+      ],
+      "learning_objectives": [
+        "Understand real estate market fundamentals and regulatory requirements",
+        "Apply sales techniques to list, market, and close property deals",
+        "Manage leasing workflows including tenant screening and documentation",
+        "Conduct basic market analysis to price and position properties"
+      ],
+      "skills_covered": [
+        "Property Sales",
+        "Leasing Management",
+        "Client Relations",
+        "Market Analysis",
+        "Real Estate Operations"
+      ],
+      "outcomes": [
+        "Property sales readiness",
+        "Leasing coordination",
+        "Market analysis",
+        "Client service"
+      ],
+      "career_outcomes": "Start a career in property sales and management with practical skills for agencies, developers, and brokerage teams.",
+      "prerequisites": "None - Entry level course",
+      "instructor": "Experienced Industry Professional",
+      "instructor_details": "Experienced instructors provide practical guidance on property sales, leasing, and market analysis to help students enter the real estate industry.",
+      "format": "Practical hands-on training",
+      "certification": "SMARI Certificate of Completion",
+      "campuses": [
+        "Kampala"
+      ],
+      "application_deadlines": {
+        "Kampala": "Rolling admissions - No deadline"
+      },
+      "partnerships": [
+        "Local Real Estate Agencies"
+      ]
+    },
+    {
+      "id": "tourism-management",
+      "title": "Tourism Management - Level 1",
+      "category": "hospitality",
+      "level": 1,
+      "duration": "1 Month",
+      "cost": "UGX 395,000",
+      "description": "Hands-on course covering tourism fundamentals, guiding practices, guest experience, and destination knowledge for tourism professionals.",
+      "image": "https://res.cloudinary.com/dycczmklj/image/upload/v1770384412/CATALOG_HospitalityTourismManagement_avypcv.png",
+      "curriculum_modules": [
+        {
+          "name": "Tourism Fundamentals and Destinations",
+          "description": "Tourism systems, product development, and destination knowledge."
+        },
+        {
+          "name": "Guiding and Guest Experience",
+          "description": "Professional guiding skills, customer service, and experience design."
+        },
+        {
+          "name": "Operations and Safety",
+          "description": "Tour operations planning, risk management, and ethical tourism practice."
+        }
+      ],
+      "learning_objectives": [
+        "Understand tourism systems and destination development",
+        "Deliver professional guiding and guest service experiences",
+        "Plan and manage safe, engaging tours and activities",
+        "Apply ethical and sustainable tourism practices"
+      ],
+      "skills_covered": [
+        "Tourism Knowledge",
+        "Cultural Presentation",
+        "Group Management",
+        "Professional Guiding",
+        "Customer Service"
+      ],
+      "outcomes": [
+        "Tourism knowledge",
+        "Cultural presentation",
+        "Group management",
+        "Professional guiding"
+      ],
+      "career_outcomes": "Excel in the tourism industry as a professional tour guide with comprehensive knowledge and skills.",
+      "prerequisites": "None - Entry level course",
+      "instructor": "Experienced Industry Professional",
+      "instructor_details": "Experienced tourism professionals with extensive knowledge of the industry.",
+      "format": "Practical hands-on training",
+      "certification": "SMARI Certificate of Completion",
+      "campuses": [
+        "Kampala"
+      ],
+      "application_deadlines": {
+        "Kampala": "Rolling admissions - No deadline"
+      },
+      "partnerships": [
+        "Victoria University Kampala"
+      ]
+    },
+    {
+      "id": "digital-currencies-forex-trading",
+      "title": "Digital currencies and forex trading - Level 1",
+      "category": "finance-investment",
+      "level": 1,
+      "duration": "1 Month",
+      "cost": "UGX 395,000",
+      "description": "Advanced trading course covering support/resistance, supply/demand, and smart money concepts. Students pick one strategy track and build a repeatable, risk-managed trading plan.",
+      "image": "https://ik.imagekit.io/67mog36hf/Flowback/Forward%20111/Pi7_Image_Tool/programming-engineers-analyzing-html-code-2025-02-19-05-28-48-utc.jpg?updatedAt=1758636303242",
+      "curriculum_modules": [
+        {
+          "name": "Market Foundations and Candle Psychology",
+          "description": "Market sessions, volatility windows, price behavior, and candle confirmation for high-probability zones."
+        },
+        {
+          "name": "Zone Identification Systems",
+          "description": "Precision support and resistance, trendlines, and supply/demand refinement for stronger zones."
+        },
+        {
+          "name": "Smart Money Concepts Track",
+          "description": "Market structure, liquidity, order blocks, imbalance, and high-precision entry models."
+        },
+        {
+          "name": "Execution, Risk, and Psychology",
+          "description": "Entry rules, stop/TP placement, risk management, and consistency routines."
+        }
+      ],
+      "learning_objectives": [
+        "Identify high-probability trading zones using structured top-down analysis",
+        "Confirm entries with candle psychology and multi-timeframe alignment",
+        "Apply support/resistance, trendlines, and supply/demand together for precision",
+        "Understand smart money market structure, liquidity, and order blocks",
+        "Build clear entry, stop-loss, and take-profit rules",
+        "Calculate position size and manage risk per trade",
+        "Develop a repeatable strategy suitable for funded account challenges",
+        "Adopt disciplined trading psychology and consistency routines"
+      ],
+      "skills_covered": [
+        "Support and Resistance Analysis",
+        "Supply and Demand Zones",
+        "Trendline Structure",
+        "Smart Money Concepts (SMC)",
+        "Liquidity Mapping",
+        "Risk and Trade Management",
+        "Top-Down Analysis",
+        "Trading Psychology"
+      ],
+      "outcomes": [
+        "Structured trading plan and routines",
+        "High-probability zone identification",
+        "Clear entry and exit rules",
+        "Risk-managed execution skills"
+      ],
+      "career_outcomes": "Build a structured trading approach suitable for funded-account challenges and disciplined personal trading.",
+      "prerequisites": "Beginner course completed or equivalent market basics",
+      "instructor": "Experienced Trading Professional",
+      "instructor_details": "Practitioners with experience in institutional-style price action, risk management, and funded-account preparation.",
+      "format": "Practical hands-on training",
+      "certification": "SMARI Certificate of Completion",
+      "campuses": [
+        "Kampala"
+      ],
+      "application_deadlines": {
+        "Kampala": "Rolling admissions - No deadline"
+      },
+      "partnerships": [
+        "Trading Community Partners"
+      ]
+    }
+  ]
+}

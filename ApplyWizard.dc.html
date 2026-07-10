@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box}
+  .aw-field:focus{outline:none;border-color:var(--aw-primary,#17877a);box-shadow:0 0 0 3px rgba(23,135,122,.12)}
+  .aw-scroll::-webkit-scrollbar{width:8px}
+  .aw-scroll::-webkit-scrollbar-thumb{background:rgba(0,0,0,.12);border-radius:4px}
+  @keyframes awpop{0%{transform:scale(.6);opacity:0}60%{transform:scale(1.08)}100%{transform:scale(1);opacity:1}}
+  @keyframes awfade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+</style>
+</helmet>
+<div style="{{ rootStyle }}" ref="{{ rootRef }}">
+
+  <sc-if value="{{ showRail }}" hint-placeholder-val="{{ true }}">
+    <aside style="{{ railStyle }}">
+      <div style="{{ brandRowStyle }}">
+        <div style="{{ brandMarkStyle }}">S</div>
+        <div>
+          <div style="{{ brandNameStyle }}">SMARI Institute</div>
+          <div style="{{ brandSubStyle }}">Application 2026</div>
+        </div>
+      </div>
+      <div style="{{ railStepsStyle }}">
+        <sc-for list="{{ stepItems }}" as="s" hint-placeholder-count="6">
+          <button onClick="{{ s.onClick }}" style="{{ s.railStyle }}">
+            <span style="{{ s.dotStyle }}">{{ s.mark }}</span>
+            <span style="{{ s.railLabelStyle }}">
+              <span style="{{ s.railKickerStyle }}">Step {{ s.n }}</span>
+              <span>{{ s.label }}</span>
+            </span>
+          </button>
+        </sc-for>
+      </div>
+      <sc-if value="{{ hasCourse }}" hint-placeholder-val="">
+        <div style="{{ railCourseStyle }}">
+          <div style="{{ railCourseKicker }}">Selected course</div>
+          <div style="{{ railCourseName }}">{{ selectedCourse.name }}</div>
+          <div style="{{ railCourseMeta }}">Level 1 · {{ selectedCourse.duration }}</div>
+          <div style="{{ railCoursePrice }}">{{ selectedCourse.price }}</div>
+        </div>
+      </sc-if>
+    </aside>
+  </sc-if>
+
+  <div style="{{ mainStyle }}">
+
+    <sc-if value="{{ showBar }}" hint-placeholder-val="{{ true }}">
+      <div style="{{ barTopStyle }}">
+        <div style="{{ barHeadStyle }}">
+          <span style="{{ barBrandStyle }}">SMARI · Apply</span>
+          <span style="{{ barCountStyle }}">Step {{ stepNo }} of 6</span>
+        </div>
+        <div style="{{ barTrackStyle }}"><div style="{{ barFillStyle }}"></div></div>
+      </div>
+    </sc-if>
+
+    <sc-if value="{{ showTop }}" hint-placeholder-val="{{ true }}">
+      <div style="{{ topStepperStyle }}">
+        <sc-for list="{{ stepItems }}" as="s" hint-placeholder-count="6">
+          <button onClick="{{ s.onClick }}" style="{{ s.topStyle }}">
+            <span style="{{ s.topDotStyle }}">{{ s.mark }}</span>
+            <span style="{{ s.topLabelStyle }}">{{ s.label }}</span>
+          </button>
+        </sc-for>
+      </div>
+    </sc-if>
+
+    <sc-if value="{{ notDone }}" hint-placeholder-val="{{ true }}">
+    <div style="{{ bodyWrapStyle }}" class="aw-scroll">
+      <div style="{{ stepHeadStyle }}" key="{{ stepKey }}">
+        <div style="{{ stepKickerStyle }}">Step {{ stepNo }} of 6</div>
+        <h2 style="{{ stepTitleStyle }}">{{ stepTitle }}</h2>
+        <p style="{{ stepSubStyle }}">{{ stepSub }}</p>
+      </div>
+
+      <!-- STEP 1: COURSE -->
+      <sc-if value="{{ isStep1 }}" hint-placeholder-val="{{ true }}">
+        <div style="{{ rowStyle }}">
+          <label style="{{ labelStyle }}">Select a Level 1 course</label>
+          <select name="course" value="{{ data.course }}" onChange="{{ onField }}" class="aw-field" style="{{ fs.course }}">
+            <option value="">Choose a programme…</option>
+            <sc-for list="{{ courseGroups }}" as="grp" hint-placeholder-count="4">
+              <optgroup label="{{ grp.label }}">
+                <sc-for list="{{ grp.courses }}" as="o" hint-placeholder-count="5">
+                  <option value="{{ o.id }}">{{ o.name }}</option>
+                </sc-for>
+              </optgroup>
+            </sc-for>
+          </select>
+          <sc-if value="{{ errors.course }}" hint-placeholder-val=""><div style="{{ errStyle }}">{{ errors.course }}</div></sc-if>
+        </div>
+        <sc-if value="{{ hasCourse }}" hint-placeholder-val="">
+          <div style="{{ coursePreviewStyle }}">
+            <div style="{{ coursePreviewTop }}">
+              <span style="{{ selectedCourse.chipStyle }}">{{ selectedCourse.cat }}</span>
+              <span style="{{ coursePriceStyle }}">{{ selectedCourse.price }}</span>
+            </div>
+            <div style="{{ coursePreviewName }}">{{ selectedCourse.name }}</div>
+            <div style="{{ coursePreviewMeta }}">Level 1 · {{ selectedCourse.duration }} · Victoria University certified</div>
+          </div>
+        </sc-if>
+      </sc-if>
+
+      <!-- STEP 2: ABOUT YOU -->
+      <sc-if value="{{ isStep2 }}" hint-placeholder-val="">
+        <div style="{{ photoRowStyle }}">
+          <div style="{{ photoBoxStyle }}">
+            <sc-if value="{{ data.photoPreview }}" hint-placeholder-val="">
+              <img src="{{ data.photoPreview }}" alt="photo" style="{{ photoImgStyle }}" />
+            </sc-if>
+            <sc-if value="{{ noPhoto }}" hint-placeholder-val="{{ true }}">
+              <span style="{{ photoHintStyle }}">Photo</span>
+            </sc-if>
+          </div>
+          <div style="{{ photoTextWrap }}">
+            <div style="{{ labelStyle }}">Passport photo <span style="{{ optStyle }}">optional</span></div>
+            <label style="{{ uploadBtnStyle }}">
+              <span>{{ photoBtnLabel }}</span>
+              <input type="file" accept="image/*" onChange="{{ onPhoto }}" style="{{ hiddenInputStyle }}" />
+            </label>
+            <div style="{{ helpTextStyle }}">Clear, front-facing. JPG or PNG.</div>
+          </div>
+        </div>
+        <div style="{{ rowStyle }}">
+          <label style="{{ labelStyle }}">Full name</label>
+          <input name="fullName" value="{{ data.fullName }}" onChange="{{ onField }}" placeholder="e.g. Amina Okello" class="aw-field" style="{{ fs.fullName }}" />
+          <sc-if value="{{ errors.fullName }}" hint-placeholder-val=""><div style="{{ errStyle }}">{{ errors.fullName }}</div></sc-if>
+        </div>
+        <div style="{{ gridTwoStyle }}">
+          <div style="{{ rowStyle }}">
+            <label style="{{ labelStyle }}">Date of birth</label>
+            <input name="dob" type="date" value="{{ data.dob }}" onChange="{{ onField }}" class="aw-field" style="{{ fs.dob }}" />
+            <sc-if value="{{ errors.dob }}" hint-placeholder-val=""><div style="{{ errStyle }}">{{ errors.dob }}</div></sc-if>
+          </div>
+          <div style="{{ rowStyle }}">
+            <label style="{{ labelStyle }}">Gender</label>
+            <div style="{{ pillRowStyle }}">
+              <sc-for list="{{ genderItems }}" as="g" hint-placeholder-count="3">
+                <button onClick="{{ g.onClick }}" style="{{ g.style }}">{{ g.label }}</button>
+              </sc-for>
+            </div>
+            <sc-if value="{{ errors.gender }}" hint-placeholder-val=""><div style="{{ errStyle }}">{{ errors.gender }}</div></sc-if>
+          </div>
+        </div>
+      </sc-if>
+
+      <!-- STEP 3: CONTACT -->
+      <sc-if value="{{ isStep3 }}" hint-placeholder-val="">
+        <div style="{{ gridTwoStyle }}">
+          <div style="{{ rowStyle }}">
+            <label style="{{ labelStyle }}">Phone number</label>
+            <input name="phone" value="{{ data.phone }}" onChange="{{ onField }}" placeholder="+256 7XX XXX XXX" class="aw-field" style="{{ fs.phone }}" />
+            <sc-if value="{{ errors.phone }}" hint-placeholder-val=""><div style="{{ errStyle }}">{{ errors.phone }}</div></sc-if>
+          </div>
+          <div style="{{ rowStyle }}">
+            <label style="{{ labelStyle }}">Email address</label>
+            <input name="email" type="email" value="{{ data.email }}" onChange="{{ onField }}" placeholder="you@email.com" class="aw-field" style="{{ fs.email }}" />
+            <sc-if value="{{ errors.email }}" hint-placeholder-val=""><div style="{{ errStyle }}">{{ errors.email }}</div></sc-if>
+          </div>
+        </div>
+        <div style="{{ rowStyle }}">
+          <label style="{{ labelStyle }}">Residential address</label>
+          <input name="address" value="{{ data.address }}" onChange="{{ onField }}" placeholder="Street / village, area" class="aw-field" style="{{ fs.address }}" />
+          <sc-if value="{{ errors.address }}" hint-placeholder-val=""><div style="{{ errStyle }}">{{ errors.address }}</div></sc-if>
+        </div>
+        <div style="{{ gridTwoStyle }}">
+          <div style="{{ rowStyle }}">
+            <label style="{{ labelStyle }}">City / District</label>
+            <input name="city" value="{{ data.city }}" onChange="{{ onField }}" placeholder="e.g. Kampala" class="aw-field" style="{{ fs.city }}" />
+          </div>
+          <div style="{{ rowStyle }}">
+            <label style="{{ labelStyle }}">Country</label>
+            <input name="country" value="{{ data.country }}" onChange="{{ onField }}" placeholder="Uganda" class="aw-field" style="{{ fs.country }}" />
+          </div>
+        </div>
+        <div style="{{ sectionDivStyle }}">Next of kin</div>
+        <div style="{{ gridTwoStyle }}">
+          <div style="{{ rowStyle }}">
+            <label style="{{ labelStyle }}">Full name</label>
+            <input name="kinName" value="{{ data.kinName }}" onChange="{{ onField }}" placeholder="Parent / guardian" class="aw-field" style="{{ fs.kinName }}" />
+            <sc-if value="{{ errors.kinName }}" hint-placeholder-val=""><div style="{{ errStyle }}">{{ errors.kinName }}</div></sc-if>
+          </div>
+          <div style="{{ rowStyle }}">
+            <label style="{{ labelStyle }}">Their phone</label>
+            <input name="kinPhone" value="{{ data.kinPhone }}" onChange="{{ onField }}" placeholder="+256 ..." class="aw-field" style="{{ fs.kinPhone }}" />
+            <sc-if value="{{ errors.kinPhone }}" hint-placeholder-val=""><div style="{{ errStyle }}">{{ errors.kinPhone }}</div></sc-if>
+          </div>
+        </div>
+      </sc-if>
+
+      <!-- STEP 4: EDUCATION -->
+      <sc-if value="{{ isStep4 }}" hint-placeholder-val="">
+        <div style="{{ rowStyle }}">
+          <label style="{{ labelStyle }}">Highest level completed</label>
+          <select name="education" value="{{ data.education }}" onChange="{{ onField }}" class="aw-field" style="{{ fs.education }}">
+            <option value="">Select level…</option>
+            <option value="Primary (PLE)">Primary (PLE)</option>
+            <option value="O-Level (UCE)">O-Level (UCE)</option>
+            <option value="A-Level (UACE)">A-Level (UACE)</option>
+            <option value="Certificate">Certificate</option>
+            <option value="Diploma">Diploma</option>
+            <option value="Bachelor's degree">Bachelor's degree</option>
+            <option value="Other">Other</option>
+          </select>
+          <sc-if value="{{ errors.education }}" hint-placeholder-val=""><div style="{{ errStyle }}">{{ errors.education }}</div></sc-if>
+        </div>
+        <div style="{{ rowStyle }}">
+          <label style="{{ labelStyle }}">School / Institution</label>
+          <input name="school" value="{{ data.school }}" onChange="{{ onField }}" placeholder="Name of your last school" class="aw-field" style="{{ fs.school }}" />
+          <sc-if value="{{ errors.school }}" hint-placeholder-val=""><div style="{{ errStyle }}">{{ errors.school }}</div></sc-if>
+        </div>
+        <div style="{{ gridTwoStyle }}">
+          <div style="{{ rowStyle }}">
+            <label style="{{ labelStyle }}">Year completed</label>
+            <input name="yearDone" value="{{ data.yearDone }}" onChange="{{ onField }}" placeholder="e.g. 2024" class="aw-field" style="{{ fs.yearDone }}" />
+          </div>
+          <div style="{{ rowStyle }}">
+            <label style="{{ labelStyle }}">Do you work currently?</label>
+            <div style="{{ pillRowStyle }}">
+              <sc-for list="{{ workItems }}" as="w" hint-placeholder-count="2">
+                <button onClick="{{ w.onClick }}" style="{{ w.style }}">{{ w.label }}</button>
+              </sc-for>
+            </div>
+          </div>
+        </div>
+      </sc-if>
+
+      <!-- STEP 5: FUNDING & DOCS -->
+      <sc-if value="{{ isStep5 }}" hint-placeholder-val="">
+        <div style="{{ rowStyle }}">
+          <label style="{{ labelStyle }}">How will your studies be funded?</label>
+          <div style="{{ fundGridStyle }}">
+            <sc-for list="{{ fundItems }}" as="f" hint-placeholder-count="4">
+              <button onClick="{{ f.onClick }}" style="{{ f.style }}">
+                <span style="{{ f.dot }}">{{ f.mark }}</span>{{ f.label }}
+              </button>
+            </sc-for>
+          </div>
+          <sc-if value="{{ errors.funding }}" hint-placeholder-val=""><div style="{{ errStyle }}">{{ errors.funding }}</div></sc-if>
+        </div>
+        <div style="{{ gridTwoStyle }}">
+          <div style="{{ rowStyle }}">
+            <label style="{{ labelStyle }}">National ID / Passport</label>
+            <label style="{{ fileDropStyle }}">
+              <span style="{{ fileIconStyle }}">⬆</span>
+              <span style="{{ fileTextStyle }}">{{ idDocLabel }}</span>
+              <input type="file" onChange="{{ onIdDoc }}" style="{{ hiddenInputStyle }}" />
+            </label>
+            <sc-if value="{{ errors.idDoc }}" hint-placeholder-val=""><div style="{{ errStyle }}">{{ errors.idDoc }}</div></sc-if>
+          </div>
+          <div style="{{ rowStyle }}">
+            <label style="{{ labelStyle }}">Certificate / Results <span style="{{ optStyle }}">optional</span></label>
+            <label style="{{ fileDropStyle }}">
+              <span style="{{ fileIconStyle }}">⬆</span>
+              <span style="{{ fileTextStyle }}">{{ certDocLabel }}</span>
+              <input type="file" onChange="{{ onCertDoc }}" style="{{ hiddenInputStyle }}" />
+            </label>
+          </div>
+        </div>
+        <div style="{{ rowStyle }}">
+          <label style="{{ labelStyle }}">How did you hear about SMARI?</label>
+          <select name="heardFrom" value="{{ data.heardFrom }}" onChange="{{ onField }}" class="aw-field" style="{{ fs.heardFrom }}">
+            <option value="">Select…</option>
+            <option value="Social media">Social media</option>
+            <option value="Friend or family">Friend or family</option>
+            <option value="SMARI website">SMARI website</option>
+            <option value="Radio / TV">Radio / TV</option>
+            <option value="Event or workshop">Event or workshop</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+      </sc-if>
+
+      <!-- STEP 6: REVIEW -->
+      <sc-if value="{{ isStep6 }}" hint-placeholder-val="">
+        <div style="{{ reviewWrapStyle }}">
+          <sc-for list="{{ reviewItems }}" as="r" hint-placeholder-count="6">
+            <div style="{{ reviewRowStyle }}">
+              <span style="{{ reviewKeyStyle }}">{{ r.k }}</span>
+              <span style="{{ reviewValStyle }}">{{ r.v }}</span>
+            </div>
+          </sc-for>
+        </div>
+        <label style="{{ agreeStyle }}">
+          <input type="checkbox" checked="{{ data.agree }}" onChange="{{ onAgree }}" style="{{ checkboxStyle }}" />
+          <span>I confirm the information above is accurate and I accept SMARI's admission terms.</span>
+        </label>
+        <sc-if value="{{ errors.agree }}" hint-placeholder-val=""><div style="{{ errStyle }}">{{ errors.agree }}</div></sc-if>
+      </sc-if>
+
+    </div>
+
+    <div style="{{ footerStyle }}">
+      <sc-if value="{{ canBack }}" hint-placeholder-val="{{ true }}">
+        <button onClick="{{ back }}" style="{{ ghostBtnStyle }}">Back</button>
+      </sc-if>
+      <sc-if value="{{ noBack }}" hint-placeholder-val="">
+        <span style="{{ helpTextStyle }}">Level 1 · 3 months · UGX 395,000</span>
+      </sc-if>
+      <button onClick="{{ primaryAction }}" style="{{ primaryBtnStyle }}">{{ primaryLabel }}</button>
+    </div>
+    </sc-if>
+
+    <!-- SUCCESS -->
+    <sc-if value="{{ isDone }}" hint-placeholder-val="">
+      <div style="{{ doneWrapStyle }}">
+        <div style="{{ checkCircleStyle }}">✓</div>
+        <h2 style="{{ doneTitleStyle }}">Application received</h2>
+        <p style="{{ doneSubStyle }}">Thank you, {{ firstName }}. Your application for <b>{{ selectedCourse.name }}</b> is in review.</p>
+        <div style="{{ refBoxStyle }}">
+          <span style="{{ refKickerStyle }}">Your reference</span>
+          <span style="{{ refNumStyle }}">{{ refNo }}</span>
+        </div>
+        <div style="{{ nextListStyle }}">
+          <div style="{{ nextItemStyle }}"><span style="{{ nextDotStyle }}">1</span>We'll email you within 3 working days.</div>
+          <div style="{{ nextItemStyle }}"><span style="{{ nextDotStyle }}">2</span>Bring your original documents to campus.</div>
+          <div style="{{ nextItemStyle }}"><span style="{{ nextDotStyle }}">3</span>Pay to confirm your place & start learning.</div>
+        </div>
+        <button onClick="{{ restart }}" style="{{ ghostBtnStyle }}">Start another application</button>
+      </div>
+    </sc-if>
+
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:760,&quot;height&quot;:640},&quot;variant&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;clean&quot;,&quot;guided&quot;,&quot;focused&quot;],&quot;default&quot;:&quot;clean&quot;,&quot;tsType&quot;:&quot;'clean'|'guided'|'focused'&quot;}}">
+class Component extends DCLogic {
+  state = {
+    step: 1,
+    maxStep: 1,
+    submitted: false,
+    narrow: false,
+    refNo: '',
+    errors: {},
+    data: {
+      course: '', fullName: '', dob: '', gender: '', photoPreview: '',
+      phone: '', email: '', address: '', city: '', country: 'Uganda',
+      kinName: '', kinPhone: '',
+      education: '', school: '', yearDone: '', working: '',
+      funding: '', idDocName: '', certDocName: '', heardFrom: '',
+      agree: false
+    }
+  };
+
+  CAT_COLOR = { 'Media & Creative Arts':'#f04e3e', 'Sales & Marketing':'#39bba1', 'Hospitality':'#fbca0d', 'Personal Development':'#89c242' };
+  CAT_ORDER = ['Media & Creative Arts','Sales & Marketing','Hospitality','Personal Development'];
+
+  RAW_COURSES = [
+    { id:'digital-marketing', name:'Digital Marketing', cat:'Sales & Marketing', duration:'3 months' },
+    { id:'audio-production', name:'Applied Audio Production', cat:'Media & Creative Arts', duration:'3 months' },
+    { id:'radio-podcast-production', name:'Radio & Podcast Production', cat:'Media & Creative Arts', duration:'3 months' },
+    { id:'film-production-ai', name:'Film Production & AI', cat:'Media & Creative Arts', duration:'3 months' },
+    { id:'documentary-production-ai', name:'Documentary Production & AI', cat:'Media & Creative Arts', duration:'3 months' },
+    { id:'photography-photoshop-ai', name:'Photoshop & Photography with AI', cat:'Media & Creative Arts', duration:'3 months' },
+    { id:'motion-graphics-ai', name:'Motion & Still Graphics with AI', cat:'Media & Creative Arts', duration:'3 months' },
+    { id:'web-app-development-ai', name:'Website Design, App Development & AI', cat:'Media & Creative Arts', duration:'3 months' },
+    { id:'animation-gaming-ai', name:'Animation & Gaming with AI', cat:'Media & Creative Arts', duration:'9 months' },
+    { id:'music-video-production-ai', name:'Music Video Production with AI', cat:'Media & Creative Arts', duration:'3 months' },
+    { id:'beauty-makeup', name:'Beauty Makeup for Film with AI', cat:'Media & Creative Arts', duration:'3 months' },
+    { id:'fashion-design', name:'Fashion Design with AI', cat:'Media & Creative Arts', duration:'9 months' },
+    { id:'ai-digital-literacy', name:'Introduction to AI & Digital Literacy', cat:'Personal Development', duration:'3 months' },
+    { id:'phone-video-production', name:'Phone Video Production', cat:'Media & Creative Arts', duration:'1 month' },
+    { id:'tv-radio-presentation', name:'TV & Radio Presentation', cat:'Media & Creative Arts', duration:'1 month' },
+    { id:'public-speaking', name:'Public Speaking', cat:'Personal Development', duration:'3 months' },
+    { id:'hospitality-management', name:'Hospitality Management', cat:'Hospitality', duration:'3 months' },
+    { id:'acting', name:'Acting & Performing Arts', cat:'Media & Creative Arts', duration:'3 months' },
+    { id:'tour-guide', name:'Tour Guide', cat:'Hospitality', duration:'3 months' },
+    { id:'drone-piloting', name:'Drone Piloting & Aerial Photography', cat:'Media & Creative Arts', duration:'3 months' },
+    { id:'urban-gardening', name:'Climate Change & Urban Home Gardening', cat:'Personal Development', duration:'3 months' },
+    { id:'dj-vj', name:'DJ, VJ & Artist Management with AI', cat:'Media & Creative Arts', duration:'3 months' },
+    { id:'event-management', name:'Event Management with AI Integration', cat:'Hospitality', duration:'3 months' },
+    { id:'real-estate-management', name:'Real Estate Management', cat:'Sales & Marketing', duration:'1 month' },
+    { id:'tourism-management', name:'Tourism Management', cat:'Hospitality', duration:'1 month' },
+    { id:'digital-currencies-forex-trading', name:'Digital Currencies & Forex Trading', cat:'Sales & Marketing', duration:'1 month' }
+  ];
+  get COURSES() { return this.RAW_COURSES.map(c => ({ ...c, price:'UGX 395,000', color:this.CAT_COLOR[c.cat] })); }
+
+  STEP_META = [
+    { n:1, label:'Course',    color:'#f04e3e', title:'Choose your course', sub:'Pick the Level 1 programme you want to join.' },
+    { n:2, label:'About you', color:'#39bba1', title:'Tell us about you', sub:'Your basic personal details.' },
+    { n:3, label:'Contact',   color:'#fbca0d', title:'How we reach you', sub:'Contact details and next of kin.' },
+    { n:4, label:'Education', color:'#89c242', title:'Your background', sub:'Your most recent education.' },
+    { n:5, label:'Funding',   color:'#f04e3e', title:'Payment & documents', sub:'How you\u2019ll pay and proof of identity.' },
+    { n:6, label:'Review',    color:'#39bba1', title:'Review & submit', sub:'Check everything before you send.' }
+  ];
+
+  theme() {
+    const v = this.props.variant || 'clean';
+    const base = { ink:'#1b2521', muted:'#66716b', border:'#e6e3db', primary:'#17877a', primaryDark:'#0f6a5f', primarySoft:'#e6f4f1', accent:'#39bba1', err:'#d33b2c', errSoft:'#fdecea' };
+    if (v === 'guided') return { ...base, key:'guided', bg:'#fbfbf9', card:'#ffffff', border:'#ebe8e1', radius:18, pad:32, stepper:'rail', headFont:"'Plus Jakarta Sans',system-ui,sans-serif" };
+    if (v === 'focused') return { ...base, key:'focused', ink:'#12332c', muted:'#79847e', bg:'#ffffff', card:'#ffffff', border:'#ecebe4', primary:'#12332c', primaryDark:'#0a1f1a', primarySoft:'#eef4f2', accent:'#17877a', radius:12, pad:40, stepper:'bar', headFont:"'Plus Jakarta Sans',system-ui,sans-serif" };
+    return { ...base, key:'clean', bg:'#f6f5f1', card:'#ffffff', radius:16, pad:30, stepper:'top', headFont:"'Newsreader',Georgia,serif" };
+  }
+
+  rootRef = (el) => {
+    if (!el || this._ro) return;
+    this._ro = new ResizeObserver(entries => {
+      const w = entries[0].contentRect.width;
+      const n = w < 640;
+      if (n !== this.state.narrow) this.setState({ narrow: n });
+    });
+    this._ro.observe(el);
+  };
+  componentWillUnmount() { if (this._ro) this._ro.disconnect(); }
+
+  set(name, value) {
+    this.setState(s => ({ data: { ...s.data, [name]: value }, errors: { ...s.errors, [name]: '' } }));
+  }
+
+  validate(step) {
+    const d = this.state.data; const e = {};
+    const req = (k, m) => { if (!String(d[k] || '').trim()) e[k] = m; };
+    if (step === 1) { if (!d.course) e.course = 'Please select a course to continue.'; }
+    if (step === 2) { req('fullName','Enter your full name.'); req('dob','Enter your date of birth.'); req('gender','Select your gender.'); }
+    if (step === 3) {
+      req('phone','Enter a phone number.');
+      if (!d.email.trim()) e.email = 'Enter your email.'; else if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(d.email)) e.email = 'Enter a valid email.';
+      req('address','Enter your address.'); req('kinName','Enter a next-of-kin name.'); req('kinPhone','Enter their phone.');
+    }
+    if (step === 4) { req('education','Select your education level.'); req('school','Enter your school.'); }
+    if (step === 5) { req('funding','Choose a funding option.'); if (!d.idDocName) e.idDoc = 'Upload your ID or passport.'; }
+    if (step === 6) { if (!d.agree) e.agree = 'Please confirm to submit.'; }
+    return e;
+  }
+
+  next = () => {
+    const e = this.validate(this.state.step);
+    if (Object.keys(e).length) { this.setState({ errors: e }); return; }
+    this.setState(s => { const ns = Math.min(6, s.step + 1); return { step: ns, maxStep: Math.max(s.maxStep, ns), errors: {} }; });
+  };
+  back = () => this.setState(s => ({ step: Math.max(1, s.step - 1), errors: {} }));
+  goStep = (n) => { if (n <= this.state.maxStep) this.setState({ step: n, errors: {} }); };
+
+  submit = () => {
+    const e = this.validate(6);
+    if (Object.keys(e).length) { this.setState({ errors: e }); return; }
+    const ref = 'SMARI-2026-' + Math.floor(10000 + Math.random() * 89999);
+    this.setState({ submitted: true, refNo: ref });
+  };
+  restart = () => this.setState({ step:1, maxStep:1, submitted:false, errors:{}, data:{ course:'', fullName:'', dob:'', gender:'', photoPreview:'', phone:'', email:'', address:'', city:'', country:'Uganda', kinName:'', kinPhone:'', education:'', school:'', yearDone:'', working:'', funding:'', idDocName:'', certDocName:'', heardFrom:'', agree:false } });
+
+  onField = (e) => this.set(e.target.name, e.target.value);
+  onAgree = (e) => this.set('agree', e.target.checked);
+  onPhoto = (e) => { const f = e.target.files && e.target.files[0]; if (!f) return; const r = new FileReader(); r.onload = () => this.set('photoPreview', r.result); r.readAsDataURL(f); };
+  onIdDoc = (e) => { const f = e.target.files && e.target.files[0]; this.set('idDocName', f ? f.name : ''); };
+  onCertDoc = (e) => { const f = e.target.files && e.target.files[0]; this.set('certDocName', f ? f.name : ''); };
+
+  renderVals() {
+    const t = this.theme();
+    const d = this.state.data;
+    const step = this.state.step;
+    const errors = this.state.errors;
+    const meta = this.STEP_META[step - 1];
+    const rawCourse = this.COURSES.find(c => c.id === d.course) || { name:'', cat:'', duration:'3 months', price:'UGX 395,000', color:t.accent };
+    const selectedCourse = { ...rawCourse, chipStyle:{ fontSize:10.5, fontWeight:700, letterSpacing:'.03em', textTransform:'uppercase', color:'#fff', background:rawCourse.color, padding:'3px 9px', borderRadius:20 } };
+    const courseOptions = this.COURSES.map(c => ({ id:c.id, name:c.name }));
+    const courseGroups = this.CAT_ORDER.map(cat => ({ label:cat, courses: this.COURSES.filter(c => c.cat === cat).map(c => ({ id:c.id, name:c.name })) })).filter(g => g.courses.length);
+
+    const narrow = this.state.narrow;
+    const effStepper = narrow ? 'bar' : t.stepper;
+    const pad = narrow ? 20 : t.pad;
+    const railW = 250;
+    const rootStyle = {
+      fontFamily:"'Plus Jakarta Sans',system-ui,sans-serif", color:t.ink, background:t.card,
+      border:'1px solid '+t.border, borderRadius:t.radius, overflow:'hidden',
+      display: effStepper==='rail' ? 'flex' : 'block', width:'100%',
+      boxShadow:'0 12px 40px -24px rgba(20,40,35,.5)', '--aw-primary':t.primary
+    };
+    const mainStyle = { flex:'1 1 auto', minWidth:0, background:t.bg, display:'flex', flexDirection:'column' };
+
+    // ---- stepper items ----
+    const stepItems = this.STEP_META.map(m => {
+      const isActive = m.n === step;
+      const isDone = m.n < this.state.maxStep || (m.n < step);
+      const reachable = m.n <= this.state.maxStep;
+      const mark = isDone && !isActive ? '✓' : String(m.n);
+      const onClick = () => this.goStep(m.n);
+      return {
+        n:m.n, label:m.label, mark, onClick,
+        topStyle:{ display:'flex', alignItems:'center', gap:8, background:'transparent', border:'none', padding:'4px 2px', cursor: reachable?'pointer':'default', flex:'0 0 auto', opacity: reachable?1:.55 },
+        topDotStyle:{ width:26, height:26, borderRadius:'50%', display:'grid', placeItems:'center', fontSize:12, fontWeight:700, flex:'0 0 auto', color: isActive?'#fff':(isDone?'#fff':t.muted), background: isActive?t.primary:(isDone?t.accent:'transparent'), border: isActive||isDone?'none':'1.5px solid '+t.border, transition:'all .2s' },
+        topLabelStyle:{ fontSize:12.5, fontWeight: isActive?700:500, color: isActive?t.ink:t.muted, whiteSpace:'nowrap' },
+        railStyle:{ display:'flex', alignItems:'center', gap:12, background: isActive?'rgba(255,255,255,.09)':'transparent', border:'none', borderLeft:'3px solid '+(isActive?m.color:'transparent'), padding:'11px 16px', width:'100%', textAlign:'left', cursor: reachable?'pointer':'default', borderRadius:'0 8px 8px 0', transition:'all .2s' },
+        dotStyle:{ width:28, height:28, borderRadius:'50%', flex:'0 0 auto', display:'grid', placeItems:'center', fontSize:12, fontWeight:700, color:'#fff', background: isActive||isDone?m.color:'rgba(255,255,255,.14)', transition:'all .2s' },
+        railLabelStyle:{ display:'flex', flexDirection:'column', lineHeight:1.25 },
+        railKickerStyle:{ fontSize:9.5, letterSpacing:'.09em', textTransform:'uppercase', color:'rgba(255,255,255,.5)', fontWeight:700 },
+        railLabelText: m.label
+      };
+    });
+    // rail label wants white text
+    stepItems.forEach(s => { s.railLabelStyle = { ...s.railLabelStyle, color:'#fff', fontSize:13.5, fontWeight:600 }; });
+
+    // ---- course cards ----
+    const courseItems = this.COURSES.map(c => {
+      const sel = d.course === c.id;
+      return {
+        cat:c.cat, name:c.name, duration:c.duration, price:c.price,
+        radioMark: sel ? '✓' : '', onClick: () => this.set('course', c.id),
+        cardStyle:{ position:'relative', display:'flex', flexDirection:'column', gap:7, alignItems:'flex-start', textAlign:'left', padding:'16px 16px 15px', borderRadius:t.radius-4, cursor:'pointer', background: sel?t.primarySoft:t.card, border:'1.5px solid '+(sel?t.primary:t.border), boxShadow: sel?'0 0 0 3px rgba(23,135,122,.12)':'none', transition:'all .18s' },
+        chipStyle:{ fontSize:10.5, fontWeight:700, letterSpacing:'.03em', textTransform:'uppercase', color:'#fff', background:c.color, padding:'3px 9px', borderRadius:20 },
+        nameStyle:{ fontSize:15.5, fontWeight:700, color:t.ink, lineHeight:1.25, fontFamily:t.headFont },
+        metaStyle:{ fontSize:12, color:t.muted, fontWeight:500 },
+        radioStyle:{ position:'absolute', top:14, right:14, width:20, height:20, borderRadius:'50%', display:'grid', placeItems:'center', fontSize:11, fontWeight:800, color:'#fff', background: sel?t.primary:'transparent', border:'1.5px solid '+(sel?t.primary:t.border) }
+      };
+    });
+
+    // ---- pill selectors ----
+    const pill = (val, cur, label, key) => ({
+      label, onClick: () => this.set(key, val),
+      style:{ padding:'9px 14px', borderRadius:10, fontSize:13, fontWeight:600, cursor:'pointer', background: cur===val?t.primary:t.card, color: cur===val?'#fff':t.ink, border:'1.5px solid '+(cur===val?t.primary:t.border), transition:'all .15s' }
+    });
+    const genderItems = ['Female','Male','Other'].map(g => pill(g, d.gender, g, 'gender'));
+    const workItems = ['Yes','No'].map(w => pill(w, d.working, w, 'working'));
+
+    const fundOpts = ['Self / family funded','Scholarship','Employer sponsored','Instalment plan'];
+    const fundItems = fundOpts.map(f => {
+      const sel = d.funding === f;
+      return { label:f, mark: sel?'✓':'', onClick: () => this.set('funding', f),
+        style:{ display:'flex', alignItems:'center', gap:10, padding:'13px 15px', borderRadius:12, fontSize:13.5, fontWeight:600, cursor:'pointer', textAlign:'left', background: sel?t.primarySoft:t.card, color:t.ink, border:'1.5px solid '+(sel?t.primary:t.border), transition:'all .15s' },
+        dot:{ width:20, height:20, borderRadius:'50%', flex:'0 0 auto', display:'grid', placeItems:'center', fontSize:11, fontWeight:800, color:'#fff', background: sel?t.primary:'transparent', border:'1.5px solid '+(sel?t.primary:t.border) } };
+    });
+
+    // ---- shared field styles ----
+    const inputBase = { width:'100%', padding:'11px 13px', fontSize:14, fontFamily:'inherit', color:t.ink, background:t.card, border:'1.5px solid '+t.border, borderRadius:10, transition:'border-color .15s, box-shadow .15s' };
+    const inputErr = { ...inputBase, borderColor:t.err, background:t.errSoft };
+    const fieldNames = ['course','fullName','dob','phone','email','address','city','country','kinName','kinPhone','education','school','yearDone','heardFrom'];
+    const fs = {}; fieldNames.forEach(n => { fs[n] = errors[n] ? inputErr : inputBase; });
+
+    // ---- review ----
+    const g = this.STEP_META[1].color;
+    const reviewItems = [
+      { k:'Course', v: selectedCourse.name || '—' },
+      { k:'Full name', v: d.fullName || '—' },
+      { k:'Date of birth', v: d.dob || '—' },
+      { k:'Phone', v: d.phone || '—' },
+      { k:'Email', v: d.email || '—' },
+      { k:'Address', v: [d.address, d.city].filter(Boolean).join(', ') || '—' },
+      { k:'Education', v: [d.education, d.school].filter(Boolean).join(' · ') || '—' },
+      { k:'Funding', v: d.funding || '—' },
+      { k:'ID document', v: d.idDocName || '—' }
+    ];
+
+    const btnPrimary = { padding:'12px 26px', fontSize:14.5, fontWeight:700, fontFamily:'inherit', color:'#fff', background:t.primary, border:'none', borderRadius:11, cursor:'pointer', boxShadow:'0 6px 16px -8px '+t.primary, transition:'transform .1s, background .15s' };
+    const btnGhost = { padding:'12px 22px', fontSize:14, fontWeight:600, fontFamily:'inherit', color:t.ink, background:'transparent', border:'1.5px solid '+t.border, borderRadius:11, cursor:'pointer' };
+
+    return {
+      rootStyle, mainStyle,
+      rootRef: this.rootRef,
+      showRail: effStepper==='rail', showTop: effStepper==='top', showBar: effStepper==='bar',
+      stepItems, courseItems, courseOptions, courseGroups, genderItems, workItems, fundItems, reviewItems, fs,
+      selectedCourse, hasCourse: !!d.course,
+      coursePreviewStyle:{ marginTop:16, padding:'18px 18px', borderRadius:t.radius-2, background:t.primarySoft, border:'1.5px solid '+t.primary, display:'flex', flexDirection:'column', gap:8, animation:'awfade .25s ease' },
+      coursePreviewTop:{ display:'flex', alignItems:'center', justifyContent:'space-between', gap:12 },
+      coursePriceStyle:{ fontSize:15, fontWeight:800, color:t.primaryDark },
+      coursePreviewName:{ fontSize:18, fontWeight:800, fontFamily:t.headFont, color:t.ink, lineHeight:1.2, letterSpacing:'-.01em' },
+      coursePreviewMeta:{ fontSize:12.5, color:t.muted, fontWeight:500 },
+      data: d, errors,
+      stepNo: step, stepTitle: meta.title, stepSub: meta.sub, stepKey:'step'+step,
+      isStep1: step===1, isStep2: step===2, isStep3: step===3, isStep4: step===4, isStep5: step===5, isStep6: step===6,
+      notDone: !this.state.submitted, isDone: this.state.submitted,
+      canBack: step>1, noBack: step===1,
+      primaryAction: step===6 ? this.submit : this.next,
+      primaryLabel: step===6 ? 'Submit application' : (step===1 ? 'Continue' : 'Next'),
+      back: this.back, restart: this.restart, onField: this.onField, onAgree: this.onAgree,
+      onPhoto: this.onPhoto, onIdDoc: this.onIdDoc, onCertDoc: this.onCertDoc,
+      noPhoto: !d.photoPreview,
+      photoBtnLabel: d.photoPreview ? 'Change photo' : 'Upload photo',
+      idDocLabel: d.idDocName || 'Tap to upload',
+      certDocLabel: d.certDocName || 'Tap to upload',
+      firstName: (d.fullName || '').split(' ')[0] || 'there',
+      refNo: this.state.refNo,
+
+      // brand / rail
+      railStyle:{ flex:'0 0 '+railW+'px', width:railW, background:'linear-gradient(165deg,#153b34,#0d2621)', color:'#fff', padding:'26px 18px', display:'flex', flexDirection:'column', gap:22 },
+      brandRowStyle:{ display:'flex', alignItems:'center', gap:11, padding:'0 6px' },
+      brandMarkStyle:{ width:38, height:38, borderRadius:10, display:'grid', placeItems:'center', fontWeight:800, fontSize:18, color:'#12332c', background:'linear-gradient(135deg,#fbca0d,#89c242)' },
+      brandNameStyle:{ fontSize:15, fontWeight:800, letterSpacing:'-.01em' },
+      brandSubStyle:{ fontSize:11, color:'rgba(255,255,255,.55)', fontWeight:500 },
+      railStepsStyle:{ display:'flex', flexDirection:'column', gap:2 },
+      railCourseStyle:{ marginTop:'auto', background:'rgba(255,255,255,.07)', borderRadius:12, padding:'14px 15px', display:'flex', flexDirection:'column', gap:3 },
+      railCourseKicker:{ fontSize:9.5, letterSpacing:'.1em', textTransform:'uppercase', color:'rgba(255,255,255,.5)', fontWeight:700 },
+      railCourseName:{ fontSize:13.5, fontWeight:700, lineHeight:1.3 },
+      railCourseMeta:{ fontSize:11.5, color:'rgba(255,255,255,.6)' },
+      railCoursePrice:{ fontSize:13, fontWeight:700, color:'#fbca0d', marginTop:4 },
+
+      // top stepper
+      topStepperStyle:{ display:'flex', gap:6, alignItems:'center', justifyContent:'space-between', flexWrap:'wrap', padding:'18px '+pad+'px', borderBottom:'1px solid '+t.border, background:t.card },
+      // bar stepper
+      barTopStyle:{ padding:'22px '+t.pad+'px 0' },
+      barHeadStyle:{ display:'flex', justifyContent:'space-between', alignItems:'baseline', marginBottom:10 },
+      barBrandStyle:{ fontSize:13, fontWeight:800, letterSpacing:'-.01em', color:t.ink },
+      barCountStyle:{ fontSize:12, fontWeight:600, color:t.muted },
+      barTrackStyle:{ height:5, borderRadius:4, background:t.border, overflow:'hidden' },
+      barFillStyle:{ height:'100%', width:(step/6*100)+'%', background:'linear-gradient(90deg,#39bba1,#17877a)', borderRadius:4, transition:'width .35s cubic-bezier(.4,0,.2,1)' },
+
+      // body
+      bodyWrapStyle:{ padding:pad+'px', flex:'1 1 auto', overflowY:'auto' },
+      stepHeadStyle:{ marginBottom:22, animation:'awfade .3s ease' },
+      stepKickerStyle:{ fontSize:11, fontWeight:700, letterSpacing:'.1em', textTransform:'uppercase', color:t.accent, marginBottom:6 },
+      stepTitleStyle:{ margin:'0 0 5px', fontSize: t.key==='focused'?30:24, fontWeight: t.key==='clean'?600:800, fontFamily:t.headFont, letterSpacing:'-.02em', lineHeight:1.1, color:t.ink },
+      stepSubStyle:{ margin:0, fontSize:14, color:t.muted, lineHeight:1.5 },
+
+      courseGridStyle:{ display:'grid', gridTemplateColumns:'repeat(auto-fill,minmax(210px,1fr))', gap:12 },
+      rowStyle:{ display:'flex', flexDirection:'column', gap:7, marginBottom:16 },
+      gridTwoStyle:{ display:'grid', gridTemplateColumns: narrow?'1fr':'1fr 1fr', gap:16 },
+      labelStyle:{ fontSize:13, fontWeight:600, color:t.ink },
+      optStyle:{ fontSize:11.5, fontWeight:500, color:t.muted, marginLeft:4 },
+      helpTextStyle:{ fontSize:12, color:t.muted, lineHeight:1.4 },
+      errStyle:{ fontSize:12.5, fontWeight:600, color:t.err, marginTop:2, animation:'awfade .2s ease' },
+      sectionDivStyle:{ fontSize:11.5, fontWeight:700, letterSpacing:'.08em', textTransform:'uppercase', color:t.muted, margin:'6px 0 14px', paddingBottom:8, borderBottom:'1px solid '+t.border },
+      pillRowStyle:{ display:'flex', gap:8, flexWrap:'wrap' },
+      fundGridStyle:{ display:'grid', gridTemplateColumns: narrow?'1fr':'1fr 1fr', gap:10 },
+
+      // photo
+      photoRowStyle:{ display:'flex', gap:16, alignItems:'center', marginBottom:20, padding:'16px', background:t.bg, borderRadius:t.radius-4, border:'1px solid '+t.border },
+      photoBoxStyle:{ width:76, height:76, flex:'0 0 auto', borderRadius:14, overflow:'hidden', background:'repeating-linear-gradient(45deg,#eceae4,#eceae4 6px,#f4f2ec 6px,#f4f2ec 12px)', display:'grid', placeItems:'center', border:'1px solid '+t.border },
+      photoImgStyle:{ width:'100%', height:'100%', objectFit:'cover' },
+      photoHintStyle:{ fontSize:10.5, fontFamily:'ui-monospace,Menlo,monospace', color:t.muted, letterSpacing:'.05em' },
+      photoTextWrap:{ display:'flex', flexDirection:'column', gap:7 },
+      uploadBtnStyle:{ display:'inline-flex', alignItems:'center', gap:6, padding:'8px 14px', fontSize:13, fontWeight:600, color:t.primary, background:t.primarySoft, border:'1.5px solid '+t.primary, borderRadius:9, cursor:'pointer', width:'fit-content' },
+      hiddenInputStyle:{ display:'none' },
+
+      // file drop
+      fileDropStyle:{ display:'flex', alignItems:'center', gap:10, padding:'13px 14px', border:'1.5px dashed '+t.border, borderRadius:11, cursor:'pointer', background:t.bg, transition:'border-color .15s' },
+      fileIconStyle:{ width:26, height:26, borderRadius:8, background:t.primarySoft, color:t.primary, display:'grid', placeItems:'center', fontSize:13, flex:'0 0 auto' },
+      fileTextStyle:{ fontSize:13, fontWeight:600, color:t.muted, overflow:'hidden', textOverflow:'ellipsis', whiteSpace:'nowrap' },
+
+      // review
+      reviewWrapStyle:{ border:'1px solid '+t.border, borderRadius:t.radius-2, overflow:'hidden', marginBottom:18 },
+      reviewRowStyle:{ display:'flex', justifyContent:'space-between', gap:16, padding:'12px 16px', borderBottom:'1px solid '+t.border, background:t.card },
+      reviewKeyStyle:{ fontSize:12.5, fontWeight:600, color:t.muted, flex:'0 0 auto' },
+      reviewValStyle:{ fontSize:13.5, fontWeight:600, color:t.ink, textAlign:'right' },
+      agreeStyle:{ display:'flex', gap:11, alignItems:'flex-start', fontSize:13, lineHeight:1.5, color:t.ink, cursor:'pointer', padding:'2px 0' },
+      checkboxStyle:{ width:18, height:18, marginTop:1, accentColor:t.primary, flex:'0 0 auto', cursor:'pointer' },
+
+      // footer
+      footerStyle:{ display:'flex', alignItems:'center', justifyContent:'space-between', gap:12, padding:'16px '+pad+'px', borderTop:'1px solid '+t.border, background:t.card },
+      primaryBtnStyle:btnPrimary, ghostBtnStyle:btnGhost,
+
+      // success
+      doneWrapStyle:{ padding:(pad+8)+'px '+pad+'px', display:'flex', flexDirection:'column', alignItems:'center', textAlign:'center', gap:14, background:t.bg, minHeight:360, justifyContent:'center' },
+      checkCircleStyle:{ width:70, height:70, borderRadius:'50%', background:'linear-gradient(135deg,#39bba1,#89c242)', color:'#fff', display:'grid', placeItems:'center', fontSize:34, fontWeight:800, animation:'awpop .5s cubic-bezier(.3,1.4,.5,1)', boxShadow:'0 12px 30px -10px rgba(57,187,161,.6)' },
+      doneTitleStyle:{ margin:0, fontSize:26, fontWeight: t.key==='clean'?600:800, fontFamily:t.headFont, color:t.ink, letterSpacing:'-.02em' },
+      doneSubStyle:{ margin:0, fontSize:14, color:t.muted, lineHeight:1.6, maxWidth:360 },
+      refBoxStyle:{ display:'flex', flexDirection:'column', gap:3, alignItems:'center', padding:'12px 26px', background:t.card, border:'1px dashed '+t.primary, borderRadius:12, margin:'4px 0' },
+      refKickerStyle:{ fontSize:10, letterSpacing:'.12em', textTransform:'uppercase', color:t.muted, fontWeight:700 },
+      refNumStyle:{ fontSize:19, fontWeight:800, color:t.primary, fontFamily:'ui-monospace,Menlo,monospace', letterSpacing:'.02em' },
+      nextListStyle:{ display:'flex', flexDirection:'column', gap:9, margin:'8px 0 6px', textAlign:'left', maxWidth:340, width:'100%' },
+      nextItemStyle:{ display:'flex', gap:11, alignItems:'center', fontSize:13.5, color:t.ink, fontWeight:500 },
+      nextDotStyle:{ width:24, height:24, borderRadius:'50%', flex:'0 0 auto', display:'grid', placeItems:'center', fontSize:12, fontWeight:800, color:'#fff', background:t.primary }
+    };
+  }
+}
+</script>
+</body>
+</html>

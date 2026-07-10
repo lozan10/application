@@ -1,0 +1,254 @@
+.root {
+  font-family: var(--font-sans);
+  color: #1b2521;
+  background: #ffffff;
+  border: 1px solid #ebe8e1;
+  border-radius: 18px;
+  overflow: hidden;
+  width: 100%;
+  box-shadow: 0 12px 40px -24px rgba(20,40,35,0.5);
+}
+
+/* ===== RAIL SIDEBAR ===== */
+.rail {
+  flex: 0 0 250px;
+  width: 250px;
+  background: var(--coral);
+  color: #fff;
+  padding: 26px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.railBrand {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 0 6px;
+}
+
+.railBrandMark {
+  height: 38px;
+  width: auto;
+  flex: 0 0 auto;
+}
+
+.railBrandName {
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+
+.railBrandSub {
+  font-size: 11px;
+  color: rgba(255,255,255,0.55);
+  font-weight: 500;
+}
+
+.railSteps {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.railStep {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: transparent;
+  border: none;
+  border-left: 3px solid transparent;
+  padding: 11px 16px;
+  width: 100%;
+  text-align: left;
+  border-radius: 0 8px 8px 0;
+  transition: all 0.2s;
+  color: #fff;
+}
+
+.railStep:hover {
+  background: rgba(255,255,255,0.05);
+}
+
+.railStepActive {
+  background: rgba(255,255,255,0.09) !important;
+}
+
+.railDot {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  flex: 0 0 auto;
+  display: grid;
+  place-items: center;
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff;
+  transition: all 0.2s;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.45);
+}
+
+.railLabel {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.25;
+  font-size: 13.5px;
+  font-weight: 600;
+}
+
+.railKicker {
+  font-size: 9.5px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.5);
+  font-weight: 700;
+}
+
+.railCourse {
+  margin-top: auto;
+  background: rgba(255,255,255,0.07);
+  border-radius: 12px;
+  padding: 14px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  animation: fadeIn 0.3s ease;
+}
+
+.railCourseKicker {
+  font-size: 9.5px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.5);
+  font-weight: 700;
+}
+
+.railCourseName {
+  font-size: 13.5px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.railCourseMeta {
+  font-size: 11.5px;
+  color: rgba(255,255,255,0.6);
+}
+
+.railCoursePrice {
+  font-size: 13px;
+  font-weight: 700;
+  color: #fbca0d;
+  margin-top: 4px;
+}
+
+/* ===== MAIN ===== */
+.main {
+  flex: 1 1 auto;
+  min-width: 0;
+  background: #fbfbf9;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== MOBILE BAR ===== */
+.barTop {
+  padding: 22px 20px 0;
+}
+
+.barHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 10px;
+}
+
+.barBrand {
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  color: #1b2521;
+}
+
+.barCount {
+  font-size: 12px;
+  font-weight: 600;
+  color: #66716b;
+}
+
+.barTrack {
+  height: 5px;
+  border-radius: 4px;
+  background: #e6e3db;
+  overflow: hidden;
+}
+
+.barFill {
+  height: 100%;
+  background: linear-gradient(90deg, #39bba1, #17877a);
+  border-radius: 4px;
+  transition: width 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ===== BODY ===== */
+.bodyWrap {
+  padding: 32px;
+  flex: 1 1 auto;
+  overflow-y: auto;
+}
+
+.stepHead {
+  margin-bottom: 22px;
+  animation: fadeIn 0.3s ease;
+}
+
+.stepKicker {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #39bba1;
+  margin-bottom: 6px;
+}
+
+.stepTitle {
+  margin: 0 0 5px;
+  font-size: 24px;
+  font-weight: 800;
+  font-family: var(--font-sans);
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  color: #1b2521;
+}
+
+.stepSub {
+  margin: 0;
+  font-size: 14px;
+  color: #66716b;
+  line-height: 1.5;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 16px 32px;
+  border-top: 1px solid #ebe8e1;
+  background: #ffffff;
+}
+
+@media (max-width: 640px) {
+  .bodyWrap {
+    padding: 20px;
+  }
+  .footer {
+    padding: 16px 20px;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}

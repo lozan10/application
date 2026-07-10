@@ -1,0 +1,73 @@
+// Prisma schema for SMARI Application Portal
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model Course {
+  id           String        @id @default(cuid())
+  courseId      String        @unique // e.g. "digital-marketing"
+  name         String
+  category     String
+  duration     String
+  price        String        @default("UGX 395,000")
+  color        String        @default("#17877a")
+  active       Boolean       @default(true)
+  createdAt    DateTime      @default(now())
+  applications Application[]
+}
+
+model Application {
+  id          String   @id @default(cuid())
+  refNo       String   @unique
+  status      String   @default("PENDING") // PENDING, UNDER_REVIEW, ACCEPTED, REJECTED
+
+  // Step 1: Course
+  courseId    String
+  course      Course   @relation(fields: [courseId], references: [id])
+
+  // Step 2: About You
+  fullName    String
+  dob         String
+  gender      String
+  photoUrl    String?
+
+  // Step 3: Contact
+  phone       String
+  email       String
+  address     String
+  city        String?
+  country     String   @default("Uganda")
+  kinName     String
+  kinPhone    String
+
+  // Step 4: Education
+  education   String
+  school      String
+  yearDone    String?
+  working     String?
+
+  // Step 5: Funding & Docs
+  funding     String
+  idDocUrl    String?
+  certDocUrl  String?
+  heardFrom   String?
+
+  // Admin
+  notes       String?
+
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model AdminUser {
+  id           String   @id @default(cuid())
+  email        String   @unique
+  passwordHash String
+  name         String
+  role         String   @default("admin")
+  createdAt    DateTime @default(now())
+}
