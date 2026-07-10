@@ -1,8 +1,14 @@
+const { existsSync } = require('node:fs');
+const { join } = require('node:path');
 const { PrismaClient } = require('@prisma/client');
 const { PrismaPg } = require('@prisma/adapter-pg');
 const { loadEnvFile } = require('node:process');
 
-loadEnvFile('.env');
+const envPath = join(process.cwd(), '.env');
+
+if (existsSync(envPath)) {
+  loadEnvFile(envPath);
+}
 
 const adapter = new PrismaPg(process.env.DATABASE_URL);
 const prisma = new PrismaClient({ adapter });
