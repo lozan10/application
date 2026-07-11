@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import styles from './page.module.css';
@@ -21,10 +20,10 @@ export default function HomePage() {
             </p>
 
             <div className={styles.ctaRow}>
-              <Link href="/apply" className={styles.cta}>
+              <a href="https://admissions.smari.ac.ug/" className={styles.cta}>
                 Start Your Application
                 <span className={styles.ctaArrow} aria-hidden="true">→</span>
-              </Link>
+              </a>
             </div>
 
             <p className={styles.help}>

@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import { MessageCircle, Phone, Mail, MapPin } from 'lucide-react';
 import styles from './Footer.module.css';
 
@@ -12,7 +11,7 @@ const PROGRAM_LINKS = [
 ];
 
 const ADMISSIONS_LINKS = [
-  { label: 'Apply Now', href: '/apply', internal: true },
+  { label: 'Apply Now', href: 'https://admissions.smari.ac.ug/' },
   { label: 'Requirements', href: `${SITE}/admissions/requirements/` },
   { label: 'Important Dates', href: `${SITE}/admissions/dates/` },
   { label: 'Tuition & Fees', href: `${SITE}/admissions/fees/` },
@@ -75,17 +74,11 @@ export default function Footer() {
 
               <div className={styles.col}>
                 <div className={styles.colTitle}>Admissions</div>
-                {ADMISSIONS_LINKS.map((item) =>
-                  item.internal ? (
-                    <Link key={item.href} href={item.href} className={styles.link}>
-                      {item.label}
-                    </Link>
-                  ) : (
-                    <a key={item.href} href={item.href} className={styles.link}>
-                      {item.label}
-                    </a>
-                  )
-                )}
+                {ADMISSIONS_LINKS.map((item) => (
+                  <a key={item.href} href={item.href} className={styles.link}>
+                    {item.label}
+                  </a>
+                ))}
               </div>
 
               <div className={styles.col}>

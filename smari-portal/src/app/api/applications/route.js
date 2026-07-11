@@ -1,24 +1,23 @@
 import { NextResponse } from 'next/server';
 import prisma from '@/lib/prisma';
-import { writeFile, mkdir } from 'fs/promises';
-import path from 'path';
+import cloudinary from '@/lib/cloudinary';
 
 async function saveFile(file, subDir) {
   if (!file || typeof file === 'string') return null;
 
   const bytes = await file.arrayBuffer();
   const buffer = Buffer.from(bytes);
+  const base64 = `data:${file.type};base64,${buffer.toString('base64')}`;
 
-  const uploadDir = path.join(process.cwd(), 'public', 'uploads', subDir);
-  await mkdir(uploadDir, { recursive: true });
+  const result = await cloudinary.uploader.upload(base64, {
+    folder: `smari/${subDir}`,
+    resource_type: 'auto',
+    use_filename: true,
+    unique_filename: true,
+    filename_override: file.name,
+  });
 
-  const timestamp = Date.now();
-  const safeName = file.name.replace(/[^a-zA-Z0-9.-]/g, '_');
-  const fileName = `${timestamp}-${safeName}`;
-  const filePath = path.join(uploadDir, fileName);
-
-  await writeFile(filePath, buffer);
-  return `/uploads/${subDir}/${fileName}`;
+  return result.secure_url;
 }
 
 export async function POST(request) {
