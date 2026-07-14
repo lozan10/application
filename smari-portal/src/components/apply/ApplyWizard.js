@@ -21,8 +21,8 @@ const STEP_META = [
 
 const INITIAL_DATA = {
   course: '', fullName: '', dob: '', gender: '', photoFile: null, photoPreview: '',
-  phone: '', email: '', address: '', city: '', country: 'Uganda',
-  kinName: '', kinPhone: '',
+  phone: '', phoneCountry: 'UG', email: '', address: '', city: '', country: 'Uganda',
+  kinName: '', kinPhone: '', kinPhoneCountry: 'UG',
   education: '', school: '', yearDone: '', working: '',
   funding: '', idDocFile: null, idDocName: '', certDocFile: null, certDocName: '', heardFrom: '',
   agree: false,

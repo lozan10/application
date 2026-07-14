@@ -1,13 +1,23 @@
 'use client';
 
-export default function StepContact({ data, errors, onField, narrow }) {
+import PhoneInput from '../PhoneInput';
+
+export default function StepContact({ data, errors, setField, onField, narrow }) {
   return (
     <div>
       {/* Phone + Email */}
       <div style={{ display: 'grid', gridTemplateColumns: narrow ? '1fr' : '1fr 1fr', gap: 16 }}>
         <div style={{ display: 'flex', flexDirection: 'column', gap: 7, marginBottom: 16 }}>
           <label className="form-label">Phone number</label>
-          <input name="phone" value={data.phone} onChange={onField} placeholder="+256 7XX XXX XXX" className={`form-input ${errors.phone ? 'error' : ''}`} />
+          <PhoneInput
+            name="phone"
+            country={data.phoneCountry}
+            onCountryChange={(iso) => setField('phoneCountry', iso)}
+            value={data.phone}
+            onValueChange={(v) => setField('phone', v)}
+            placeholder="7XX XXX XXX"
+            error={!!errors.phone}
+          />
           {errors.phone && <div className="form-error">{errors.phone}</div>}
         </div>
         <div style={{ display: 'flex', flexDirection: 'column', gap: 7, marginBottom: 16 }}>
@@ -53,7 +63,15 @@ export default function StepContact({ data, errors, onField, narrow }) {
         </div>
         <div style={{ display: 'flex', flexDirection: 'column', gap: 7 }}>
           <label className="form-label">Their phone</label>
-          <input name="kinPhone" value={data.kinPhone} onChange={onField} placeholder="+256 ..." className={`form-input ${errors.kinPhone ? 'error' : ''}`} />
+          <PhoneInput
+            name="kinPhone"
+            country={data.kinPhoneCountry}
+            onCountryChange={(iso) => setField('kinPhoneCountry', iso)}
+            value={data.kinPhone}
+            onValueChange={(v) => setField('kinPhone', v)}
+            placeholder="7XX XXX XXX"
+            error={!!errors.kinPhone}
+          />
           {errors.kinPhone && <div className="form-error">{errors.kinPhone}</div>}
         </div>
       </div>
