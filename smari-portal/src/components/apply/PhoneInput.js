@@ -4,32 +4,46 @@ import { useEffect, useRef, useState } from 'react';
 import { ChevronDown } from 'lucide-react';
 
 export const COUNTRIES = [
-  { iso: 'UG', name: 'Uganda', dial: '+256', flag: '🇺🇬' },
-  { iso: 'KE', name: 'Kenya', dial: '+254', flag: '🇰🇪' },
-  { iso: 'TZ', name: 'Tanzania', dial: '+255', flag: '🇹🇿' },
-  { iso: 'RW', name: 'Rwanda', dial: '+250', flag: '🇷🇼' },
-  { iso: 'SS', name: 'South Sudan', dial: '+211', flag: '🇸🇸' },
-  { iso: 'BI', name: 'Burundi', dial: '+257', flag: '🇧🇮' },
-  { iso: 'CD', name: 'DR Congo', dial: '+243', flag: '🇨🇩' },
-  { iso: 'ET', name: 'Ethiopia', dial: '+251', flag: '🇪🇹' },
-  { iso: 'SO', name: 'Somalia', dial: '+252', flag: '🇸🇴' },
-  { iso: 'SD', name: 'Sudan', dial: '+249', flag: '🇸🇩' },
-  { iso: 'ZM', name: 'Zambia', dial: '+260', flag: '🇿🇲' },
-  { iso: 'MW', name: 'Malawi', dial: '+265', flag: '🇲🇼' },
-  { iso: 'NG', name: 'Nigeria', dial: '+234', flag: '🇳🇬' },
-  { iso: 'GH', name: 'Ghana', dial: '+233', flag: '🇬🇭' },
-  { iso: 'ZA', name: 'South Africa', dial: '+27', flag: '🇿🇦' },
-  { iso: 'EG', name: 'Egypt', dial: '+20', flag: '🇪🇬' },
-  { iso: 'GB', name: 'United Kingdom', dial: '+44', flag: '🇬🇧' },
-  { iso: 'US', name: 'United States', dial: '+1', flag: '🇺🇸' },
-  { iso: 'CA', name: 'Canada', dial: '+1', flag: '🇨🇦' },
-  { iso: 'IN', name: 'India', dial: '+91', flag: '🇮🇳' },
-  { iso: 'AE', name: 'United Arab Emirates', dial: '+971', flag: '🇦🇪' },
-  { iso: 'CN', name: 'China', dial: '+86', flag: '🇨🇳' },
+  { iso: 'UG', name: 'Uganda', dial: '+256' },
+  { iso: 'KE', name: 'Kenya', dial: '+254' },
+  { iso: 'TZ', name: 'Tanzania', dial: '+255' },
+  { iso: 'RW', name: 'Rwanda', dial: '+250' },
+  { iso: 'SS', name: 'South Sudan', dial: '+211' },
+  { iso: 'BI', name: 'Burundi', dial: '+257' },
+  { iso: 'CD', name: 'DR Congo', dial: '+243' },
+  { iso: 'ET', name: 'Ethiopia', dial: '+251' },
+  { iso: 'SO', name: 'Somalia', dial: '+252' },
+  { iso: 'SD', name: 'Sudan', dial: '+249' },
+  { iso: 'ZM', name: 'Zambia', dial: '+260' },
+  { iso: 'MW', name: 'Malawi', dial: '+265' },
+  { iso: 'NG', name: 'Nigeria', dial: '+234' },
+  { iso: 'GH', name: 'Ghana', dial: '+233' },
+  { iso: 'ZA', name: 'South Africa', dial: '+27' },
+  { iso: 'EG', name: 'Egypt', dial: '+20' },
+  { iso: 'GB', name: 'United Kingdom', dial: '+44' },
+  { iso: 'US', name: 'United States', dial: '+1' },
+  { iso: 'CA', name: 'Canada', dial: '+1' },
+  { iso: 'IN', name: 'India', dial: '+91' },
+  { iso: 'AE', name: 'United Arab Emirates', dial: '+971' },
+  { iso: 'CN', name: 'China', dial: '+86' },
 ];
 
 export function findCountry(iso) {
   return COUNTRIES.find((c) => c.iso === iso) || COUNTRIES[0];
+}
+
+function FlagImg({ iso, size = 18 }) {
+  const code = iso.toLowerCase();
+  return (
+    <img
+      src={`https://flagcdn.com/w40/${code}.png`}
+      srcSet={`https://flagcdn.com/w80/${code}.png 2x`}
+      alt=""
+      width={size}
+      height={Math.round(size * 0.75)}
+      style={{ display: 'block', borderRadius: 2, objectFit: 'cover', flex: '0 0 auto' }}
+    />
+  );
 }
 
 export default function PhoneInput({ name, country, onCountryChange, value, onValueChange, placeholder, error }) {
@@ -59,7 +73,7 @@ export default function PhoneInput({ name, country, onCountryChange, value, onVa
         aria-label="Select country code"
         aria-expanded={open}
       >
-        <span style={{ fontSize: 17, lineHeight: 1 }}>{selected.flag}</span>
+        <FlagImg iso={selected.iso} />
         <span style={{ fontSize: 13, fontWeight: 600, color: 'var(--ink)' }}>{selected.dial}</span>
         <ChevronDown size={14} style={{ color: 'var(--muted)' }} />
       </button>
@@ -93,7 +107,7 @@ export default function PhoneInput({ name, country, onCountryChange, value, onVa
                 border: 'none', borderRadius: 8, cursor: 'pointer', fontSize: 13, textAlign: 'left',
               }}
             >
-              <span style={{ fontSize: 16 }}>{c.flag}</span>
+              <FlagImg iso={c.iso} />
               <span style={{ flex: 1, color: 'var(--ink)' }}>{c.name}</span>
               <span style={{ color: 'var(--muted)', fontWeight: 600 }}>{c.dial}</span>
             </button>
