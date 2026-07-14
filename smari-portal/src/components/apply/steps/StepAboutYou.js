@@ -22,7 +22,7 @@ export default function StepAboutYou({ data, errors, setField, onField, narrow }
         <div style={{
           width: 76, height: 76, flex: '0 0 auto', borderRadius: 14, overflow: 'hidden',
           background: 'repeating-linear-gradient(45deg, #eceae4, #eceae4 6px, #f4f2ec 6px, #f4f2ec 12px)',
-          display: 'grid', placeItems: 'center', border: '1px solid var(--border)',
+          display: 'grid', placeItems: 'center', border: `1px solid ${errors.photoFile ? 'var(--err)' : 'var(--border)'}`,
         }}>
           {data.photoPreview ? (
             <img src={data.photoPreview} alt="photo" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
@@ -31,7 +31,7 @@ export default function StepAboutYou({ data, errors, setField, onField, narrow }
           )}
         </div>
         <div style={{ display: 'flex', flexDirection: 'column', gap: 7 }}>
-          <div className="form-label">Passport photo <span style={{ fontSize: 11.5, fontWeight: 500, color: 'var(--muted)', marginLeft: 4 }}>optional</span></div>
+          <div className="form-label">Passport photo <span style={{ fontSize: 11.5, fontWeight: 500, color: 'var(--err)', marginLeft: 4 }}>required</span></div>
           <label style={{
             display: 'inline-flex', alignItems: 'center', gap: 6, padding: '8px 14px',
             fontSize: 13, fontWeight: 600, color: 'var(--primary)', background: 'var(--primary-soft)',
@@ -41,6 +41,7 @@ export default function StepAboutYou({ data, errors, setField, onField, narrow }
             <input type="file" accept="image/*" onChange={onPhoto} style={{ display: 'none' }} />
           </label>
           <div style={{ fontSize: 12, color: 'var(--muted)', lineHeight: 1.4 }}>Clear, front-facing. JPG or PNG.</div>
+          {errors.photoFile && <div className="form-error">{errors.photoFile}</div>}
         </div>
       </div>
 

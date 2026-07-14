@@ -71,20 +71,36 @@ export default function ApplyWizard() {
   const validate = useCallback((s) => {
     const e = {};
     const req = (k, m) => { if (!String(data[k] || '').trim()) e[k] = m; };
+    const isTenDigitPhone = (v) => /^\d{10}$/.test(String(v || '').replace(/\D/g, ''));
 
     if (s === 1) { if (!data.course) e.course = 'Please select a course to continue.'; }
     if (s === 2) {
       req('fullName', 'Enter your full name.');
       req('dob', 'Enter your date of birth.');
+      if (data.dob) {
+        const dobDate = new Date(data.dob);
+        if (Number.isNaN(dobDate.getTime())) {
+          e.dob = 'Enter a valid date of birth.';
+        } else {
+          const today = new Date();
+          let age = today.getFullYear() - dobDate.getFullYear();
+          const monthDiff = today.getMonth() - dobDate.getMonth();
+          if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < dobDate.getDate())) age--;
+          if (age < 10) e.dob = 'You must be at least 10 years old to apply.';
+        }
+      }
       req('gender', 'Select your gender.');
+      if (!data.photoFile && !data.photoPreview) e.photoFile = 'Upload your passport photo.';
     }
     if (s === 3) {
       req('phone', 'Enter a phone number.');
+      if (data.phone && !isTenDigitPhone(data.phone)) e.phone = 'Enter a valid 10-digit phone number.';
       if (!data.email.trim()) e.email = 'Enter your email.';
       else if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(data.email)) e.email = 'Enter a valid email.';
       req('address', 'Enter your address.');
       req('kinName', 'Enter a next-of-kin name.');
       req('kinPhone', 'Enter their phone.');
+      if (data.kinPhone && !isTenDigitPhone(data.kinPhone)) e.kinPhone = 'Enter a valid 10-digit phone number.';
     }
     if (s === 4) {
       req('education', 'Select your education level.');

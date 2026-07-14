@@ -41,6 +41,7 @@ export async function POST(request) {
     const working = formData.get('working') || '';
     const funding = formData.get('funding');
     const heardFrom = formData.get('heardFrom') || '';
+    const photoFile = formData.get('photo');
 
     // Validate required fields
     const errors = [];
@@ -56,6 +57,24 @@ export async function POST(request) {
     if (!education) errors.push('Education level is required');
     if (!school) errors.push('School is required');
     if (!funding) errors.push('Funding option is required');
+    if (!photoFile || typeof photoFile === 'string') errors.push('Passport photo is required');
+
+    const isTenDigitPhone = (v) => /^\d{10}$/.test(String(v || '').replace(/\D/g, ''));
+    if (phone && !isTenDigitPhone(phone)) errors.push('Phone must be a valid 10-digit number');
+    if (kinPhone && !isTenDigitPhone(kinPhone)) errors.push('Next of kin phone must be a valid 10-digit number');
+
+    if (dob) {
+      const dobDate = new Date(dob);
+      if (Number.isNaN(dobDate.getTime())) {
+        errors.push('Date of birth is invalid');
+      } else {
+        const today = new Date();
+        let age = today.getFullYear() - dobDate.getFullYear();
+        const monthDiff = today.getMonth() - dobDate.getMonth();
+        if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < dobDate.getDate())) age--;
+        if (age < 10) errors.push('Applicant must be at least 10 years old');
+      }
+    }
 
     if (errors.length > 0) {
       return NextResponse.json({ error: errors.join(', ') }, { status: 400 });
@@ -68,7 +87,6 @@ export async function POST(request) {
     }
 
     // Save files
-    const photoFile = formData.get('photo');
     const idDocFile = formData.get('idDoc');
     const certDocFile = formData.get('certDoc');
 
