@@ -10,6 +10,7 @@ async function saveFile(file, subDir) {
   const base64 = `data:${file.type};base64,${buffer.toString('base64')}`;
 
   const result = await cloudinary.uploader.upload(base64, {
+    upload_preset: 'smarischool',
     folder: `smari/${subDir}`,
     resource_type: 'auto',
     use_filename: true,
