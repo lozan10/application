@@ -11,7 +11,7 @@ const PROGRAM_LINKS = [
 ];
 
 const ADMISSIONS_LINKS = [
-  { label: 'Apply Now', href: 'https://admissions.smari.ac.ug/' },
+  { label: 'Apply Now', href: '/apply' },
   { label: 'Requirements', href: `${SITE}/admissions/requirements/` },
   { label: 'Important Dates', href: `${SITE}/admissions/dates/` },
   { label: 'Tuition & Fees', href: `${SITE}/admissions/fees/` },

@@ -20,7 +20,7 @@ export default function HomePage() {
             </p>
 
             <div className={styles.ctaRow}>
-              <a href="https://admissions.smari.ac.ug/" className={styles.cta}>
+              <a href="/apply" className={styles.cta}>
                 Start Your Application
                 <span className={styles.ctaArrow} aria-hidden="true">→</span>
               </a>
